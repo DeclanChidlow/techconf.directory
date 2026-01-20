@@ -1,0 +1,14 @@
+title: SmashingConf Freiburg
+website: smashingconf.com/freiburg-2026
+tags:
+  - front-end
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-09-07
+      end: 2026-09-10
+    format: in-person
+    location:
+      country: DE
+      city: Freiburg

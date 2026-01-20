@@ -1,0 +1,19 @@
+title: CSS Day
+website: cssday.nl
+socials:
+  bluesky: cssday.nl
+  fediverse: mastodon.social/@cssday
+  youtube: WebConferencesAmsterdam
+  linkedin: cssday
+tags:
+  - front-end
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-05-11
+      end: 2026-05-12
+    format: in-person
+    location:
+      country: NL
+      city: Amsterdam

@@ -1,0 +1,27 @@
+name: Suggest a Conference
+description: Suggest a new conference be added to the list
+labels: ["conference", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a conference! Please fill out the details below.
+  - type: input
+    id: conf_name
+    attributes:
+      label: Conference Name
+      placeholder: "eg, Everything Open"
+    validations:
+      required: true
+  - type: input
+    id: conf_website
+    attributes:
+      label: Conference Website
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Additional Notes
+      placeholder: "Any other details we should be aware of?"

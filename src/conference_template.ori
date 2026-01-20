@@ -1,0 +1,43 @@
+(conference) => main_template.ori({
+	title: conference.title
+	canonical: `/conferences/${conference.file_name}`
+	stylesheet: "pages/conferences-individual.css"
+
+	_body: `
+	<article>
+		<header>
+			<h1>${conference.title}</h1>
+		</header>
+
+		<div class="socials">
+			${ conference.website ? `<a href="https://${ conference.website }" class="website">${ conference.website }</a>` : '' }
+			${ conference.socials?.bluesky ? `<a href="https://bsky.app/profile/${ conference.socials.bluesky }">${ bluesky_icon }</a>` : '' }
+			${ conference.socials?.fediverse ? `<a href="https://${ conference.socials.fediverse }">${ fediverse_icon }</a>` : '' }
+			${ conference.socials?.youtube ? `<a href="https://www.youtube.com/@${ conference.socials.youtube }">${ youtube_icon }</a>` : '' }
+			${ conference.socials?.linkedin ? `<a href="https://www.linkedin.com/company/${ conference.socials.linkedin }/">${ linkedin_icon }</a>` : '' }
+		</div>
+
+		<h2>Upcoming Events</h2>
+		<ul>
+			${ Tree.map(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now()), (event, year) => `
+				<li>
+					<h3>${year}:</h3>
+					<p>${ functions/pretty-date.js(event.dates.start) } ${ event.dates.end ? `to ${ functions/pretty-date.js(event.dates.end) }` : ''}</p>
+					<p>${event.location.city}, ${ new Intl.DisplayNames(["en"], { type: "region" }).of(event.location.country) }</p>
+					${ event.cfp_open ? `<p class="cfp-open">Call for papers open!</p>` : "" }
+				</li>
+			`)}
+		</ul>
+
+		<h2>Past Events</h2>
+		<ul>
+			${ Tree.map(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) < Date.now()), (event, year) => `
+				<li>
+					<p>${ functions/pretty-date.js(event.dates.start) } ${ event.dates.end ? `to ${ functions/pretty-date.js(event.dates.end) }` : ''}</p>
+					<p>${event.location.city}, ${ new Intl.DisplayNames(["en"], { type: "region" }).of(event.location.country) }</p>
+				</li>
+			`)}
+		</ul>
+	</article>
+	`
+})

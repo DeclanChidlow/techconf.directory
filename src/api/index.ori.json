@@ -1,0 +1,10 @@
+{
+	"techconf.directory": "1.0.0",
+	"website": "https://techconf.directory",
+	"api_docs": "https://techconf.directory/docs",
+	"last_updated": "${ new Date(parseInt(Origami.shell('git log -1 --format=%ct').trim()) * 1000).toISOString() }",
+	"build": {
+		"timestamp": "${ Date.now() }",
+		"git_version": "${ Origami.shell('git rev-parse --short HEAD').trim() }"
+	}
+}

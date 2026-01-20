@@ -1,0 +1,14 @@
+title: SmashingConf Amsterdam
+website: smashingconf.com/amsterdam-2026
+tags:
+  - front-end
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-04-13
+      end: 2026-04-16
+    format: in-person
+    location:
+      country: NL
+      city: Amsterdam

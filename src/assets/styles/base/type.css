@@ -1,0 +1,45 @@
+@font-face {
+	font-family: "Texturina";
+	src: url("/assets/typefaces/texturina.woff2") format("woff2");
+	font-weight: 100 900;
+	font-display: swap;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Texturina", serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.3rem;
+}
+
+hr {
+	margin-block: 1rem;
+}
+
+.readable {
+	max-inline-size: 75ch;
+	text-wrap: pretty;
+
+	> * + * {
+		margin-block-start: 1rem;
+	}
+}

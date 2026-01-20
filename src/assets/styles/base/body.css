@@ -1,0 +1,23 @@
+:root {
+	color-scheme: light dark;
+
+	--white: #fff4ea;
+	--black: #161214;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	margin-inline: 4rem;
+	color: light-dark(var(--black), var(--white));
+	background-color: light-dark(var(--white), var(--black));
+
+	@media (max-width: 45rem) {
+		margin-inline: 0.8rem;
+	}
+}
+
+main {
+	margin-block: 3rem;
+	flex-grow: 1;
+}

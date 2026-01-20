@@ -1,0 +1,14 @@
+title: SmashingConf Antwerp
+website: smashingconf.com/antwerp-2026
+tags:
+  - front-end
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-10-12
+      end: 2026-10-15
+    format: in-person
+    location:
+      country: BE
+      city: Antwerp

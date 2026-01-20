@@ -1,0 +1,13 @@
+(speakers) => {
+	data: Tree.values(Tree.map(speakers, (speaker, fileName) => {
+		id: Origami.slug(speaker.name)
+		name: speaker.name
+		website: "https://" + speaker.website
+		socials: {
+			bluesky: "@" + speaker.socials.bluesky
+			fediverse: speaker.socials.fediverse
+			youtube: "@" + speaker.socials.youtube
+			linkedin: speaker.socials.linkedin
+		}
+	}))
+}

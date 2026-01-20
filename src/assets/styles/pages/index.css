@@ -1,0 +1,62 @@
+#navbar nav {
+	display: none;
+}
+
+main header {
+	width: 100%;
+	margin-block-start: 6rem;
+	margin-block-end: 8rem;
+
+	h1 {
+		font-size: 4rem;
+	}
+
+	p {
+		font-style: italic;
+		margin-inline-start: 1rem;
+	}
+}
+
+section {
+	max-width: 90ch;
+	margin-block: 4rem;
+
+	h2 {
+		margin-block-end: 1rem;
+	}
+
+	a {
+		color: currentColor;
+	}
+
+	ol {
+		list-style: none;
+
+		a {
+			text-decoration: none;
+
+			&:hover,
+			&:focus-visible {
+				text-decoration: underline;
+			}
+		}
+
+		> li {
+			border-bottom: 2px solid grey;
+			padding-inline: 1rem;
+			padding-block: 1rem;
+		}
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	> a {
+		display: block;
+		width: fit-content;
+		margin-inline-start: auto;
+		margin-block-start: 2rem;
+		font-style: italic;
+	}
+}

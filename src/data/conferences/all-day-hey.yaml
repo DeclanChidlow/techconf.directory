@@ -1,0 +1,13 @@
+title: All Day Hey!
+website: heypresents.com
+tags:
+  - front-end
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-07-05
+    format: in-person
+    location:
+      country: GB
+      city: Leeds

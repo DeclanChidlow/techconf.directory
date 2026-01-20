@@ -1,0 +1,8 @@
+(conferences) => {
+	data: Tree.values(Tree.map(conferences, (conference, fileName) => {
+		id: conference.title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, ""),
+		title: conference.title
+		tags: conference.tags
+		upcoming_events: Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now())
+	}))
+}

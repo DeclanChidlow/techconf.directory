@@ -1,0 +1,9 @@
+# IDE / editor specific ignores
+.idea/
+.vscode/
+
+# node.js
+node_modules/
+
+# Repo specific
+build/

@@ -1,0 +1,52 @@
+#navbar {
+	padding-block: 1rem;
+	font-size: 1.5rem;
+
+	#navlanding {
+		font-family: Texturina, serif;
+		font-weight: bold;
+		text-decoration: none;
+		color: light-dark(var(--black), var(--white));
+
+		&:hover,
+		&:focus-visible {
+			text-decoration: underline;
+		}
+	}
+
+	.skip-link {
+		position: absolute;
+		inset-block-start: 0;
+		inset-inline-start: 0;
+		margin: 1rem;
+		background: light-dark(var(--white), var(--black));
+		transform: translateY(calc(-100% - 2rem));
+		transition: transform 0.1s;
+		z-index: calc(infinity);
+
+		&:focus-within {
+			transform: translateY(0%);
+		}
+	}
+}
+
+footer {
+	text-align: center;
+
+	nav ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+		justify-content: center;
+		list-style: none;
+		margin-block-end: 2rem;
+	}
+
+	p {
+		padding-block-end: 3rem;
+	}
+
+	a {
+		color: inherit;
+	}
+}

@@ -1,0 +1,51 @@
+name: Submit a Speaker
+description: Suggest a speaker be added to the directory
+labels: ["speaker", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide the details for the speaker you would like to add.
+  - type: input
+    id: name
+    attributes:
+      label: Full Name
+      placeholder: "Declan Chidlow"
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Website
+      placeholder: "vale.rocks"
+  - type: input
+    id: bluesky
+    attributes:
+      label: Bluesky Handle
+  - type: input
+    id: fediverse
+    attributes:
+      label: Fediverse URL
+      placeholder: "fedi.example.com/user"
+  - type: input
+    id: youtube
+    attributes:
+      label: YouTube Handle
+  - type: input
+    id: linkedin
+    attributes:
+      label: LinkedIn Profile
+  - type: input
+    id: country
+    attributes:
+      label: Country (2-letter code)
+      placeholder: "AU"
+    validations:
+      required: true
+  - type: input
+    id: city
+    attributes:
+      label: City
+      placeholder: "Perth"
+    validations:
+      required: true

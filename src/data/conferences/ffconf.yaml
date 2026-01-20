@@ -1,0 +1,13 @@
+title: FFConf
+website: ffconf.org
+tags:
+  - front-end
+  - web development
+events:
+  2025:
+    dates:
+      start: 2025-11-14
+    format: in-person
+    location:
+      country: GB
+      city: Brighton

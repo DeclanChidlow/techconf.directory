@@ -1,0 +1,39 @@
+{
+	assets
+	robots.txt
+
+	index.html = pages/index.ori(conferences_data.ori, speakers_data.ori)
+
+	...Tree.mapExtension(pages, ".md→.html", {
+		value: (path) => main_template.ori(Origami.mdHtml(path))
+	})
+
+	conferences/ = {
+		index.html = pages/conferences.ori(conferences_data.ori)
+		...Tree.mapExtension(conferences_data.ori, ".yaml->.html", {
+			value: conference_template.ori
+		})
+	}
+
+	speakers/ = {
+		index.html = pages/speakers.ori(speakers_data.ori)
+		...Tree.mapExtension(speakers_data.ori, ".yaml->.html", {
+			value: speaker_template.ori
+		})
+	}
+
+	api/ = {
+		index.json = api/index.ori.json
+		conferences.json = Tree.json(api/conferences.ori(conferences_data.ori))
+		speakers.json = Tree.json(api/speakers.ori(speakers_data.ori))
+
+		conferences/ = Tree.mapExtension(conferences_data.ori, ".yaml→.json", {
+			value: (conference) => Tree.json(conference)
+		})
+	}
+}
+
+→ (site) => {
+    ...site
+    sitemap.xml = sitemap-improver.js(Origami.sitemap(site, { base: "https://techconf.directory" }))
+}

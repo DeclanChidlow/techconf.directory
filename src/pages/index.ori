@@ -1,0 +1,60 @@
+(conferences, speakers) => main_template.ori({
+	title: "TechConf.Directory - An index of technology conferences and speakers"
+	description: "TechConf.Directory lists technology conferences of all varieties and technology speakers. You can filter and explore a range of conferences to find what suits you and your criteria. You can also discover speakers suited to present at your next event."
+	stylesheet: "pages/index.css"
+	canonical: ""
+
+	_body: `
+	<header>
+		<h1>TechConf.Directory</h1>
+		<p>Find your next tech conference.</p>
+	</header>
+
+	<section>
+		<h2>Some Upcoming Conferences:</h2>
+
+		<ol>
+		  ${ Tree.map(Tree.take(Tree.filter(conferences, (conference) => Tree.size(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now())) > 0	), 10 ), (conference) => `
+			  <li>
+				<h3><a href="/conferences/${ conference.id }.html">
+					${ conference.title }
+				</a></h3>
+
+				<ul>
+					${ Tree.map(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now()), (event) => `
+						<li>
+							<p>${ functions/pretty-date.js(event.dates.start) }
+							${ event.dates.end ? `to ${ functions/pretty-date.js(event.dates.end) }` : '' }</p>
+							<p>${ event.location.city }, ${ new Intl.DisplayNames(["en"], { type: "region" }) .of(event.location.country) }</p>
+						</li>
+					`)}
+				</ul>
+			  </li>
+			`)}
+		</ol>
+
+		<a href="conferences">View All 🠖</a>
+	</section>
+
+	<!--
+	<section>
+		<h2>Speakers:</h2>
+
+		<ol>
+			${ Tree.map(speakers, (speaker) => `
+				<li>
+					<h3><a href="/speakers/${ Origami.slug(speaker.name) }.html">${ speaker.name }</a></h3>
+				</li>
+			`)}
+		</ol>
+
+		<a href="speakers">View All 🠖</a>
+	</section>
+	-->
+
+	<section>
+		<h2>Submit</h2>
+		<p>Do you know of a conference not yet listed, or are you a speaker looking for speaking opportunities? Consider <a href="https://github.com/DeclanChidlow/techconf.directory/issues/new/choose">making a submission on GitHub</a> to be considered for inclusion.</p>
+	</section>
+	`
+})

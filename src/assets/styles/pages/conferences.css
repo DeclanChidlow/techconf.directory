@@ -1,0 +1,95 @@
+form {
+	display: none; /* Set to flex in JS */
+	gap: 1rem;
+	margin-block-start: 5rem;
+	margin-block-end: 1rem;
+}
+
+input,
+label {
+	height: fit-content;
+}
+
+.custom-select {
+	position: relative;
+	height: fit-content;
+	padding-inline: 0.75rem;
+	padding-block: 0.5rem;
+	border-radius: 0.25rem;
+	background: light-dark(#c2c9dd, #3f2b35);
+	width: 100%;
+
+	fieldset {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		inset-inline-start: 0;
+		padding: 0.25rem;
+		padding-block-start: 0.5rem;
+		width: 100%;
+		min-width: fit-content;
+		border-radius: 0.25rem;
+		background: light-dark(#c2c9dd, #3f2b35);
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	label {
+		display: block;
+		padding-block: 0.25rem;
+		padding-inline: 0.5rem;
+		border-radius: 0.25rem;
+
+		&:not(:has(input[type="date"])):is(:hover, :focus-visible) {
+			backdrop-filter: invert(25%);
+		}
+	}
+}
+
+input[type="date"] {
+	width: 100%;
+	background: none;
+	padding-inline: 0.25rem;
+	padding-block: 0.5rem;
+	border-radius: 0.25rem;
+	backdrop-filter: invert(25%);
+	border: transparent;
+}
+
+input[type="reset"] {
+	background: light-dark(#c2c9dd, #3f2b35);
+	border: transparent;
+	padding-inline: 0.75rem;
+	padding-block: 0.5rem;
+	border-radius: 0.25rem;
+}
+
+main {
+	max-width: 80rem;
+
+	a {
+		color: currentColor;
+	}
+
+	ol {
+		list-style: none;
+
+		a {
+			text-decoration: none;
+
+			&:hover,
+			&:focus-visible {
+				text-decoration: underline;
+			}
+		}
+
+		> li {
+			border-bottom: 2px solid grey;
+			padding-inline: 1rem;
+			padding-block: 1rem;
+		}
+	}
+
+	ul {
+		list-style: none;
+	}
+}

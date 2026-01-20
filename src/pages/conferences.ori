@@ -1,0 +1,62 @@
+(conferences) => main_template.ori({
+	title: "Upcoming Conferences"
+	canonical: "/conferences"
+	stylesheet: "pages/conferences.css"
+
+	_body: `
+	<header>
+		<h1>All Upcoming Conferences</h1>
+		<p>All of them. Every single one*.</p>
+    </header>
+
+	<form id="filter-form">
+		<details class="custom-select" name="filter">
+			<summary>Countries</summary>
+			<fieldset id="countries-list"></fieldset>
+		</details>
+
+		<details class="custom-select" name="filter">
+			<summary>Tags</summary>
+			<fieldset id="tags-list"></fieldset>
+		</details>
+
+		<details class="custom-select" name="filter">
+			<summary>Format</summary>
+			<fieldset id="format-list">
+				<label><input type="checkbox" name="format" value="in-person"> In-Person</label>
+				<label><input type="checkbox" name="format" value="online"> Online</label>
+				<label><input type="checkbox" name="format" value="hybrid"> Hybrid</label>
+			</fieldset>
+		</details>
+
+		<details class="custom-select" name="filter">
+			<summary>Date</summary>
+			<fieldset id="format-list">
+				<label>From: <input type="date" id="date-start" name="date-start"></label>
+				<label>To: <input type="date" id="date-end" name="date-end"></label>
+			</fieldset>
+		</details>
+
+		
+		<input type="reset" value="Clear">
+	</form>
+
+    <ol>
+		${ Tree.map(conferences, (conference) => Tree.size(Tree.filter(conference.events, (event) => Date.parse(event.dates.end) >= Date.now())) > 0 ? `
+			<li>
+				<h2><a href="/conferences/${ conference.file_name }.html">${ conference.title }</a></h2>
+				<ul>
+					${ Tree.map(Tree.filter(conference.events, (event) => Date.parse(event.dates.end) >= Date.now()), (event, year) => `
+						<li>
+							<p>${ functions/pretty-date.js(event.dates.start) } ${ event.dates.end ? `to ${ functions/pretty-date.js(event.dates.end) }` : ''}</p>
+							<p>${ event.location.city }, ${ new Intl.DisplayNames(["en"], { type: "region" }).of(event.location.country) }</p>
+						</li>
+					`)}
+				</ul>
+			</li>
+		` : "" ) }
+	</ol>
+
+	<script src='/assets/scripts/conferences-filter.js'></script>
+  `
+})

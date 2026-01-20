@@ -1,0 +1,13 @@
+button,
+input {
+	background: black;
+}
+
+label {
+	display: flex;
+	flex-direction: column;
+
+	&:has([type="checkbox"]) {
+		flex-direction: row;
+	}
+}

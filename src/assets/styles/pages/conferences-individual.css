@@ -1,0 +1,30 @@
+.socials {
+	display: flex;
+	gap: 1rem;
+	border-block: 1px solid grey;
+	padding-block: 0.5rem;
+	padding-inline: 0.5rem;
+	margin-block: 1rem;
+
+	a {
+		color: currentColor;
+	}
+
+	.website {
+		text-decoration: none;
+		flex-grow: 1;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+ul {
+	list-style: none;
+	margin-inline-start: 2rem;
+}
+
+.cfp-open {
+	color: red;
+}

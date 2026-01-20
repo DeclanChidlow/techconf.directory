@@ -1,0 +1,27 @@
+title: Beyond Tellerrand Düsseldorf
+website: beyondtellerrand.com
+socials:
+  bluesky: beyondtellerrand.com
+  fediverse: mastodon.social/@btconf
+  youtube: btconf
+  linkedin: beyondtellerrand
+tags:
+  - front-end
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-04-27
+      end: 2026-04-28
+    format: in-person
+    location:
+      country: DE
+      city: Düsseldorf
+  2025:
+    dates:
+      start: 2025-04-27
+      end: 2025-04-28
+    format: in-person
+    location:
+      country: DE
+      city: Düsseldorf

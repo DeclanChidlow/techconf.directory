@@ -1,0 +1,23 @@
+(speaker) => main_template.ori({
+	title: speaker.name
+	canonical: `/speakers/${ speaker.file_name }`
+	stylesheet: "pages/speakers-individual.css"
+
+	_body: ` 
+	<article>
+		<header>
+			<h1>${ speaker.name }</h1>
+		</header>
+
+		<div class="socials">
+			${ speaker.website ? `<a href="https://${ speaker.website }" class="website">${ speaker.website }</a>` : '' }
+			${ speaker.socials?.bluesky ? `<a href="https://bsky.app/profile/${ speaker.socials.bluesky }">${ bluesky_icon }</a>` : '' }
+			${ speaker.socials?.fediverse ? `<a href="https://${ speaker.socials.fediverse }">${ fediverse_icon }</a>` : '' }
+			${ speaker.socials?.youtube ? `<a href="https://www.youtube.com/@${ speaker.socials.youtube }">${ youtube_icon }</a>` : '' }
+			${ speaker.socials?.linkedin ? `<a href="https://www.linkedin.com/in/${ speaker.socials.linkedin }/">${ linkedin_icon }</a>` : '' }
+		</div>
+
+		<p class="location">${ speaker.location.city }, ${ new Intl.DisplayNames(["en"], { type: "region" }).of(speaker.location.country) }</p>
+	</article>
+	`
+})

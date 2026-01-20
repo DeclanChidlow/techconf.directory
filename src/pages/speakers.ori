@@ -1,0 +1,26 @@
+(speakers) => main_template.ori({
+	title: "Tech Conference Speakers"
+	description: "Individuals who have spoken or are actively speaking at conferences."
+	og_description: "People fit to speak at your next event."
+	canonical: "/speakers"
+	stylesheet: "pages/speakers.css"
+
+	_body: `
+	<header>
+		<h1>${ title }</h1>
+		<p>Itching for someone with skill and flair to speak at your conference or event? These fine folks the best to ever do it.</p>
+	</header>
+
+	<ol>
+		${ Tree.map(speakers, (speaker) => `
+			<li>
+				<h2>
+					<a href="/speakers/${ Origami.slug(speaker.name) }.html">${ speaker.name }</a>
+				</h2>
+			</li>
+		`)}
+	</ol>
+
+	<script src='/assets/scripts/speakers-filter.js'></script>
+	`
+})

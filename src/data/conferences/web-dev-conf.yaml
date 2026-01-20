@@ -1,0 +1,13 @@
+title: Web Dev Conf
+website: webdevconf.com
+tags:
+  - front-end
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-10-10
+    format: in-person
+    location:
+      country: GB
+      city: Bristol
