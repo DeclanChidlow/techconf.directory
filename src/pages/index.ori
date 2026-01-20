@@ -11,7 +11,9 @@
 	</header>
 
 	<section>
-		<h2>Some Upcoming Conferences:</h2>
+		<h2>Upcoming Conferences:</h2>
+
+		<a href="conferences">View All 🠖</a>
 
 		<ol>
 		  ${ Tree.map(Tree.take(Tree.filter(conferences, (conference) => Tree.size(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now())) > 0	), 10 ), (conference) => `
@@ -32,13 +34,13 @@
 			  </li>
 			`)}
 		</ol>
-
-		<a href="conferences">View All 🠖</a>
 	</section>
 
 	<!--
 	<section>
 		<h2>Speakers:</h2>
+
+		<a href="speakers">View All 🠖</a>
 
 		<ol>
 			${ Tree.map(speakers, (speaker) => `
@@ -47,8 +49,6 @@
 				</li>
 			`)}
 		</ol>
-
-		<a href="speakers">View All 🠖</a>
 	</section>
 	-->
 

@@ -64,7 +64,6 @@ section {
 		display: block;
 		width: fit-content;
 		margin-inline-start: auto;
-		margin-block-start: 2rem;
 		font-style: italic;
 	}
 }

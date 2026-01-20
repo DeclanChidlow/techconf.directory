@@ -4,6 +4,13 @@ tags:
   - front-end
   - web development
 events:
+  2026:
+    dates:
+      start: 2026-11-13
+    format: in-person
+    location:
+      country: GB
+      city: Brighton
   2025:
     dates:
       start: 2025-11-14
