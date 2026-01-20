@@ -72,7 +72,6 @@ Git commit hash (short version) used for this build.
 
 **id**
 string
-(query)
 
 Unique identifier of the conference.
 
@@ -80,7 +79,6 @@ Unique identifier of the conference.
 
 **title**
 string
-(query)
 
 Name of the conference.
 
@@ -88,7 +86,6 @@ Name of the conference.
 
 **tags**
 array<string>
-(query)
 
 Comma-separated list of tech tags (eg, 'front-end, web development').
 
@@ -96,7 +93,6 @@ Comma-separated list of tech tags (eg, 'front-end, web development').
 
 **upcoming_events.year**
 integer
-(query)
 
 Year of the upcoming event (eg, 2026).
 
@@ -104,7 +100,6 @@ Year of the upcoming event (eg, 2026).
 
 **upcoming_events.dates.start**
 string
-(query)
 
 Start date of the event in YYYY-MM-DD format.
 
@@ -112,7 +107,6 @@ Start date of the event in YYYY-MM-DD format.
 
 **upcoming_events.dates.end**
 string
-(query)
 
 End date of the event in YYYY-MM-DD format. Optional if the event is one day.
 
@@ -120,7 +114,6 @@ End date of the event in YYYY-MM-DD format. Optional if the event is one day.
 
 **upcoming_events.format**
 string
-(query)
 
 Event format. Available values: in-person, online, hybrid.
 
@@ -128,7 +121,6 @@ Event format. Available values: in-person, online, hybrid.
 
 **upcoming_events.location.country**
 string
-(query)
 
 Country code of the event location (eg, 'NL', 'GB').
 
@@ -136,7 +128,6 @@ Country code of the event location (eg, 'NL', 'GB').
 
 **upcoming_events.location.city**
 string
-(query)
 
 City of the event location (eg, 'Amsterdam', 'London').
 
@@ -147,7 +138,6 @@ City of the event location (eg, 'Amsterdam', 'London').
 
 **title**
 string
-(query)
 
 Name of the conference (eg, 'Beyond Tellerrand Düsseldorf').
 
@@ -155,7 +145,6 @@ Name of the conference (eg, 'Beyond Tellerrand Düsseldorf').
 
 **website**
 string
-(query)
 
 URL or domain of the conference website (eg, 'beyondtellerrand.com').
 
@@ -163,7 +152,6 @@ URL or domain of the conference website (eg, 'beyondtellerrand.com').
 
 **socials.bluesky**
 string
-(query)
 
 Bluesky profile or link of the conference.
 
@@ -171,7 +159,6 @@ Bluesky profile or link of the conference.
 
 **socials.fediverse**
 string
-(query)
 
 Fediverse/Mastodon profile link of the conference.
 
@@ -179,7 +166,6 @@ Fediverse/Mastodon profile link of the conference.
 
 **socials.youtube**
 string
-(query)
 
 YouTube username or channel ID.
 
@@ -187,7 +173,6 @@ YouTube username or channel ID.
 
 **socials.linkedin**
 string
-(query)
 
 LinkedIn page slug.
 
@@ -195,7 +180,6 @@ LinkedIn page slug.
 
 **tags**
 array<string>
-(query)
 
 Comma-separated list of tech tags (eg, 'front-end, web development').
 
@@ -203,7 +187,6 @@ Comma-separated list of tech tags (eg, 'front-end, web development').
 
 **events.year**
 integer
-(query)
 
 Year of the conference event (eg, 2025, 2026).
 
@@ -211,7 +194,6 @@ Year of the conference event (eg, 2025, 2026).
 
 **events.dates.start**
 string
-(query)
 
 Start date of the event in YYYY-MM-DD format.
 
@@ -219,7 +201,6 @@ Start date of the event in YYYY-MM-DD format.
 
 **events.dates.end**
 string
-(query)
 
 End date of the event in YYYY-MM-DD format. Optional if the event is one day.
 
@@ -227,7 +208,6 @@ End date of the event in YYYY-MM-DD format. Optional if the event is one day.
 
 **events.format**
 string
-(query)
 
 Event format. Available values: in-person, online, hybrid.
 
@@ -235,7 +215,6 @@ Event format. Available values: in-person, online, hybrid.
 
 **events.location.country**
 string
-(query)
 
 Country code of the event location (eg, 'DE').
 
@@ -243,7 +222,6 @@ Country code of the event location (eg, 'DE').
 
 **events.location.city**
 string
-(query)
 
 City of the event location (eg, 'Düsseldorf').
 
@@ -254,7 +232,6 @@ City of the event location (eg, 'Düsseldorf').
 
 **id**
 string
-(query)
 
 Unique identifier for the speaker (eg, 'declan-chidlow').
 
@@ -262,7 +239,6 @@ Unique identifier for the speaker (eg, 'declan-chidlow').
 
 **name**
 string
-(query)
 
 Full name of the speaker (eg, 'Declan Chidlow').
 
@@ -270,7 +246,6 @@ Full name of the speaker (eg, 'Declan Chidlow').
 
 **website**
 string
-(query)
 
 URL of the speaker’s personal or professional website (eg, '[https://vale.rocks](https://vale.rocks)').
 
@@ -278,7 +253,6 @@ URL of the speaker’s personal or professional website (eg, '[https://vale.rock
 
 **socials.bluesky**
 string
-(query)
 
 Bluesky handle of the speaker (eg, '@vale.rocks').
 
@@ -286,7 +260,6 @@ Bluesky handle of the speaker (eg, '@vale.rocks').
 
 **socials.fediverse**
 string
-(query)
 
 Fediverse/Mastodon profile of the speaker (eg, 'fedi.vale.rocks/vale').
 
@@ -294,7 +267,6 @@ Fediverse/Mastodon profile of the speaker (eg, 'fedi.vale.rocks/vale').
 
 **socials.youtube**
 string
-(query)
 
 YouTube username or channel handle (eg, '@outervale').
 
@@ -302,7 +274,6 @@ YouTube username or channel handle (eg, '@outervale').
 
 **socials.linkedin**
 string
-(query)
 
 LinkedIn page slug (eg, 'declan-chidlow').
 

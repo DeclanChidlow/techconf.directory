@@ -63,7 +63,7 @@
 				<li><a href="/conferences">Conferences</a></li>
 				<!--<li><a href="/speakers">Speakers</a></li>-->
 				<li><a href="/docs">API Docs</a></li>
-				<li><a href="/about">About</a></li>
+				<li><a href="/about">About</a><wbr></li>
 				<li><a href="https://github.com/DeclanChidlow/techconf.directory">GitHub</a></li>
 				<li><a href="/sitemap.xml">Sitemap</a></li>
 			</ul>

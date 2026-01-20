@@ -36,7 +36,8 @@ footer {
 	nav ul {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 2rem;
+		column-gap: 2rem;
+		row-gap: 1rem;
 		justify-content: center;
 		list-style: none;
 		margin-block-end: 2rem;
