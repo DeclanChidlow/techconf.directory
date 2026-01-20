@@ -18,7 +18,7 @@
 		<ol>
 		  ${ Tree.map(Tree.take(Tree.filter(conferences, (conference) => Tree.size(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now())) > 0	), 10 ), (conference) => `
 			  <li>
-				<h3><a href="/conferences/${ conference.id }.html">
+				<h3><a href="/conferences/${ conference.title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "") }">
 					${ conference.title }
 				</a></h3>
 
@@ -45,7 +45,7 @@
 		<ol>
 			${ Tree.map(speakers, (speaker) => `
 				<li>
-					<h3><a href="/speakers/${ Origami.slug(speaker.name) }.html">${ speaker.name }</a></h3>
+					<h3><a href="/speakers/${ Origami.slug(speaker.name) }">${ speaker.name }</a></h3>
 				</li>
 			`)}
 		</ol>

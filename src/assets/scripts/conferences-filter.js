@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					)
 					.join("");
 
-				li.innerHTML = `<h2><a href="/conferences/${conf.id}.html">${conf.title}</a></h2><ul>${eventsHtml}</ul>`;
+				li.innerHTML = `<h2><a href="/conferences/${conf.id}">${conf.title}</a></h2><ul>${eventsHtml}</ul>`;
 				dom.list.appendChild(li);
 			}
 		});

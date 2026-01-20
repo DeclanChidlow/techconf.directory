@@ -1,6 +1,6 @@
 (conference) => main_template.ori({
 	title: conference.title
-	canonical: `/conferences/${conference.file_name}`
+	canonical: `/conferences/${ conference.title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "") }`
 	stylesheet: "pages/conferences-individual.css"
 
 	_body: `
@@ -34,7 +34,7 @@
 			${ Tree.map(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) < Date.now()), (event, year) => `
 				<li>
 					<p>${ functions/pretty-date.js(event.dates.start) } ${ event.dates.end ? `to ${ functions/pretty-date.js(event.dates.end) }` : ''}</p>
-					<p>${event.location.city}, ${ new Intl.DisplayNames(["en"], { type: "region" }).of(event.location.country) }</p>
+					${ event.location ? `<p>${event.location.city}, ${ new Intl.DisplayNames(["en"], { type: "region" }).of(event.location.country) }</p>` : '' }
 				</li>
 			`)}
 		</ul>

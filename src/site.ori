@@ -23,7 +23,7 @@
 	}
 
 	api/ = {
-		index.json = api/index.ori.json
+		index.json = Tree.json(api/index.ori)
 		conferences.json = Tree.json(api/conferences.ori(conferences_data.ori))
 		speakers.json = Tree.json(api/speakers.ori(speakers_data.ori))
 

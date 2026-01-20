@@ -23,7 +23,7 @@ OpenAPI specification coming soon.
 </div>
 
 <details>
-<summary><span class="get">GET</span> <h2>/</h2> <em>API root</em></summary>
+<summary><span class="get">GET</span> <h2>/index.json</h2> <em>API info</em></summary>
 
 **techconf.directory**
 string
@@ -68,7 +68,7 @@ Git commit hash (short version) used for this build.
 </details>
 
 <details>
-<summary><span class="get">GET</span> <h2>/conferences</h2> <em>List of all conferences</em></summary>
+<summary><span class="get">GET</span> <h2>/conferences.json</h2> <em>List of all conferences</em></summary>
 
 **id**
 string
@@ -143,7 +143,7 @@ City of the event location (eg, 'Amsterdam', 'London').
 </details>
 
 <details>
-<summary><span class="get">GET</span> <h2>/conferences/{id}</h2> <em>Details of a given conference</em></summary>
+<summary><span class="get">GET</span> <h2>/conferences/{id}.json</h2> <em>Details of a given conference</em></summary>
 
 **title**
 string
@@ -250,7 +250,7 @@ City of the event location (eg, 'Düsseldorf').
 </details>
 
 <details>
-<summary><span class="get">GET</span> <h2>/speakers</h2> <em>List of all speakers</em></summary>
+<summary><span class="get">GET</span> <h2>/speakers.json</h2> <em>List of all speakers</em></summary>
 
 **id**
 string

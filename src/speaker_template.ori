@@ -1,6 +1,6 @@
 (speaker) => main_template.ori({
 	title: speaker.name
-	canonical: `/speakers/${ speaker.file_name }`
+	canonical: `/speakers/${ Origami.slug(speaker.name) }`
 	stylesheet: "pages/speakers-individual.css"
 
 	_body: ` 

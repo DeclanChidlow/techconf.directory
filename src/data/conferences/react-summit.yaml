@@ -1,0 +1,15 @@
+title: React Summit 
+website: reactsummit.com
+tags:
+  - front-end
+  - web development
+  - React
+events:
+  2026:
+    dates:
+      start: 2026-06-12
+      end: 2026-06-16
+    format: hybrid
+    location:
+      country: NL
+      city: Amsterdam
