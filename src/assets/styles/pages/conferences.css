@@ -1,6 +1,7 @@
 form {
 	display: none; /* Set to flex in JS */
 	gap: 1rem;
+	flex-wrap: wrap;
 	margin-block-start: 5rem;
 	margin-block-end: 1rem;
 }
@@ -17,7 +18,7 @@ label {
 	padding-block: 0.5rem;
 	border-radius: 0.25rem;
 	background: light-dark(#c2c9dd, #3f2b35);
-	width: 100%;
+	flex-grow: 1;
 
 	fieldset {
 		display: flex;

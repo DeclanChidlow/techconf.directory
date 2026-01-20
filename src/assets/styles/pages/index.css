@@ -15,6 +15,14 @@ main header {
 		font-style: italic;
 		margin-inline-start: 1rem;
 	}
+
+	@media (max-width: 35rem) {
+		text-align: center;
+
+		p {
+			margin-inline: 0;
+		}
+	}
 }
 
 section {

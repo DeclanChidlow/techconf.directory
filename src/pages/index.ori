@@ -6,7 +6,7 @@
 
 	_body: `
 	<header>
-		<h1>TechConf.Directory</h1>
+		<h1>TechConf.<wbr>Directory</h1>
 		<p>Find your next tech conference.</p>
 	</header>
 

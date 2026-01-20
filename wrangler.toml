@@ -1,4 +1,4 @@
-name = "techconfs-directory"
+name = "techconf-directory"
 compatibility_date = "2026-01-20"
 workers_dev = false
 preview_urls = false
