@@ -21,3 +21,7 @@ main {
 	margin-block: 3rem;
 	flex-grow: 1;
 }
+
+.cfp-open {
+	color: red;
+}

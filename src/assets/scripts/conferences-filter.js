@@ -99,9 +99,12 @@ document.addEventListener("DOMContentLoaded", () => {
 				const eventsHtml = validEvents
 					.map(
 						(evt) => `
-					<li>${formatDate(evt.dates.start)} ${evt.dates.end ? ` to ${formatDate(evt.dates.end)}` : ""}
-                    <p>${evt.location ? `${evt.location.city}, ${getCountryName(evt.location.country)}` : "Online"}</p></li>
-                `,
+						<li>
+							${formatDate(evt.dates.start)} ${evt.dates.end ? ` to ${formatDate(evt.dates.end)}` : ""}
+							<p>${evt.location ? `${evt.location.city}, ${getCountryName(evt.location.country)}` : "Online"}</p>
+							${evt.cfp_open ? '<p class="cfp-open">Call for papers open!</p>' : ""}
+						</li>
+						`,
 					)
 					.join("");
 

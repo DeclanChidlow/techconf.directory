@@ -11,7 +11,7 @@ canonical: /about
 
 There is a steady stream of fantastic events for digital professionals forever occurring across the globe. TechConf.Directory's goal is to aid your discovery of such conferences.
 
-With a [fully open API](/api) providing comprehensive data for your needs, this is not just a site but also the database for whatever you may choose to build.
+With a [fully open API](/docs) providing comprehensive data for your needs, this is not just a site but also the database for whatever you may choose to build.
 
 TechConf.Directory came about because I found it difficult to not only find conferences but also to easily find information about each conference in one place.
 

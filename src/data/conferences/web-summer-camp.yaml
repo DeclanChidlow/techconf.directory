@@ -1,0 +1,15 @@
+title: Web Summer Camp
+website: websummercamp.com
+tags:
+  - front-end
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-07-02
+      end: 2026-07-04
+    cfp_open: true
+    format: in-person
+    location:
+      country: HR
+      city: Opatija

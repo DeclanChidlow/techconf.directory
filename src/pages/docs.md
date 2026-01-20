@@ -14,7 +14,7 @@ Looking for a source of information pertaining to technology conferences? Look n
 
 No authentication is necessary, but please be respectful and employ best practices.
 
-Endpoint: [`https://techconf.directory/api`](https://techconf.directory/api)
+Endpoint: `https://techconf.directory/api`
 
 All returned as `application/json`.
 
