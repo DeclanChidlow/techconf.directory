@@ -1,0 +1,13 @@
+title: PyConf Hyderabad
+website: pyconfhyd.org
+tags:
+  - python
+events:
+  2026:
+    dates:
+      start: 2026-03-14
+      end: 2026-03-15
+    format: in-person
+    location:
+      country: IN
+      city: Hyderabad

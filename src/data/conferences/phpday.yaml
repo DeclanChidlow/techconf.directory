@@ -1,0 +1,15 @@
+title: phpday
+website: www.phpday.it
+socials:
+  fediverse: phpc.social/@grusp
+tags:
+  - php
+events:
+  2026:
+    dates:
+      start: 2026-05-14
+      end: 2026-05-15
+    format: in-person
+    location:
+      country: IT
+      city: Verona

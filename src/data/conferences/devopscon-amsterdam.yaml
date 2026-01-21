@@ -1,0 +1,13 @@
+title: DevOpsCon Amsterdam
+website: devopscon.io/amsterdam
+tags:
+  - devops
+events:
+  2026:
+    dates:
+      start: 2026-04-20
+      end: 2026-04-24
+    format: in-person
+    location:
+      country: NL
+      city: Amsterdam

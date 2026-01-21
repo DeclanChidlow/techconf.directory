@@ -1,0 +1,15 @@
+title: UberConf
+website: uberconf.com
+tags:
+  - api
+  - data
+  - java
+events:
+  2026:
+    dates:
+      start: 2026-07-14
+      end: 2026-07-17
+    format: in-person
+    location:
+      country: US
+      city: Denver

@@ -1,0 +1,13 @@
+title: Laravel Live Japan
+website: laravellive.jp
+tags:
+  - php
+events:
+  2026:
+    dates:
+      start: 2026-05-26
+      end: 2026-05-27
+    format: in-person
+    location:
+      country: JP
+      city: Tokyo

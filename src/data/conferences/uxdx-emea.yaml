@@ -1,0 +1,17 @@
+title: UXDX EMEA
+website: uxdx.com/berlin
+socials:
+  bluesky: uxdx.com
+tags:
+  - devops
+  - leadership
+  - ux
+events:
+  2026:
+    dates:
+      start: 2026-05-27
+      end: 2026-05-29
+    format: in-person
+    location:
+      country: DE
+      city: Berlin

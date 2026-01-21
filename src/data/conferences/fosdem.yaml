@@ -1,0 +1,13 @@
+title: Fosdem
+website: fosdem.org
+tags:
+  - open-source
+events:
+  2026:
+    dates:
+      start: 2026-01-31
+      end: 2026-02-01
+    format: in-person
+    location:
+      country: BE
+      city: Brussels

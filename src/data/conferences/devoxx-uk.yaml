@@ -1,0 +1,15 @@
+title: Devoxx UK
+website: www.devoxx.co.uk
+socials:
+  bluesky: devoxx.uk
+tags:
+  - java
+events:
+  2026:
+    dates:
+      start: 2026-05-06
+      end: 2026-05-07
+    format: in-person
+    location:
+      country: GB
+      city: London

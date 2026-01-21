@@ -1,0 +1,13 @@
+title: Tokyo Test Fest
+website: tokyotestfest.com
+tags:
+  - testing
+events:
+  2026:
+    dates:
+      start: 2026-11-12
+      end: 2026-11-13
+    format: in-person
+    location:
+      country: JP
+      city: Tokyo

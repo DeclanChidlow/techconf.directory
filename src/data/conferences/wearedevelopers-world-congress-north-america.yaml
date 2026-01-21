@@ -1,0 +1,13 @@
+title: WeAreDevelopers World Congress North America
+website: https://www.wearedevelopers.com/world-congress-us
+tags:
+  - general
+events:
+  2026:
+    dates:
+      start: 2026-09-23
+      end: 2026-09-25
+    format: in-person
+    location:
+      country: US
+      city: San Jose

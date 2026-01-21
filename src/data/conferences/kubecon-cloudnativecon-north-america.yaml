@@ -1,0 +1,13 @@
+title: KubeCon + CloudNativeCon North America
+website: events.linuxfoundation.org/kubecon-cloudnativecon-north-america-2026
+tags:
+  - devops
+events:
+  2026:
+    dates:
+      start: 2026-10-26
+      end: 2026-10-29
+    format: in-person
+    location:
+      country: US
+      city: Los Angeles

@@ -1,0 +1,12 @@
+title: ParisTestConf
+website: paristestconf.com
+tags:
+  - testing
+events:
+  2026:
+    dates:
+      start: 2026-03-31
+    format: in-person
+    location:
+      country: FR
+      city: Paris

@@ -1,0 +1,17 @@
+title: Berlin Buzzwords
+website: berlinbuzzwords.de
+socials:
+  fediverse: floss.social/@berlinbuzzwords
+tags:
+  - data
+  - devops
+  - open-source
+events:
+  2026:
+    dates:
+      start: 2026-06-07
+      end: 2026-06-09
+    format: in-person
+    location:
+      country: DE
+      city: Berlin

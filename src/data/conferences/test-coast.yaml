@@ -1,0 +1,14 @@
+title: Test Coast
+website: www.testcoast.se
+tags:
+  - data
+  - devops
+  - testing
+events:
+  2026:
+    dates:
+      start: 2026-05-21
+    format: in-person
+    location:
+      country: SE
+      city: Gothenburg

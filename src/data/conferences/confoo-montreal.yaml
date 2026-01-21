@@ -1,0 +1,15 @@
+title: ConFoo Montreal
+website: confoo.ca
+socials:
+  bluesky: confooca.bsky.app
+tags:
+  - full-stack
+events:
+  2026:
+    dates:
+      start: 2026-02-25
+      end: 2026-02-27
+    format: in-person
+    location:
+      country: CA
+      city: Montreal

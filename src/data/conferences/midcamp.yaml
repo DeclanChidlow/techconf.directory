@@ -1,0 +1,16 @@
+title: MidCamp
+website: www.midcamp.org
+socials:
+  bluesky: midcamp.org
+  fediverse: fosstodon.org/@midcamp
+tags:
+  - php
+events:
+  2026:
+    dates:
+      start: 2026-05-12
+      end: 2026-05-14
+    format: in-person
+    location:
+      country: US
+      city: Chicago

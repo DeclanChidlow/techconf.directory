@@ -1,0 +1,13 @@
+title: AMTSO Cyber Research Conference
+website: https://www.amtso.org/special-events/amtso-cyber-research-conference-2026
+tags:
+  - cybersecurity
+events:
+  2026:
+    dates:
+      start: "2026-10-20"
+      end: "2026-10-21"
+    format: in-person
+    location:
+      country: BE
+      city: Brussels

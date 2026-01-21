@@ -1,0 +1,17 @@
+title: ESPC
+website: www.espc.tech
+socials:
+  bluesky: espccommunity.bsky.social
+tags:
+  - data
+  - networking
+  - cybersecurity
+events:
+  2026:
+    dates:
+      start: 2026-11-30
+      end: 2026-12-03
+    format: in-person
+    location:
+      country: NL
+      city: Amsterdam

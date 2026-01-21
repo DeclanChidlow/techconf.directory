@@ -1,0 +1,13 @@
+title: APIConf
+website: apiconf.io
+tags:
+  - api
+events:
+  2026:
+    dates:
+      start: "2026-11-30"
+      end: "2026-12-02"
+    format: hybrid
+    location:
+      country: US
+      city: Clearwater

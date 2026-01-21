@@ -1,0 +1,13 @@
+title: "VSLive! Las Vegas"
+website: vslive.com
+tags:
+  - dotnet
+events:
+  2026:
+    dates:
+      start: 2026-03-16
+      end: 2026-03-20
+    format: in-person
+    location:
+      country: US
+      city: Las Vegas

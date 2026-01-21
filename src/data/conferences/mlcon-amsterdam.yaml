@@ -1,0 +1,16 @@
+title: MLcon Amsterdam
+website: mlconference.ai/amsterdam
+socials:
+  bluesky: mlcon.bsky.social
+tags:
+  - data
+  - ai
+events:
+  2026:
+    dates:
+      start: 2026-04-20
+      end: 2026-04-24
+    format: in-person
+    location:
+      country: NL
+      city: Amsterdam

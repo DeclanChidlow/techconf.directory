@@ -1,0 +1,13 @@
+title: Devopsdays Berlin
+website: devopsdays.org/events/2026-berlin/welcome
+tags:
+  - devops
+events:
+  2026:
+    dates:
+      start: 2026-09-29
+      end: 2026-09-30
+    format: in-person
+    location:
+      country: DE
+      city: Berlin

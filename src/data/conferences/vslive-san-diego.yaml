@@ -1,0 +1,13 @@
+title: "VSLive! San Diego"
+website: vslive.com
+tags:
+  - dotnet
+events:
+  2026:
+    dates:
+      start: 2026-09-14
+      end: 2026-09-18
+    format: in-person
+    location:
+      country: US
+      city: San Diego

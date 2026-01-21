@@ -1,0 +1,15 @@
+title: PHP Conference Berlin
+website: phpconference.com/berlin-en
+socials:
+  bluesky: phpconference.bsky.social
+tags:
+  - php
+events:
+  2026:
+    dates:
+      start: 2026-06-08
+      end: 2026-06-12
+    format: in-person
+    location:
+      country: DE
+      city: Berlin

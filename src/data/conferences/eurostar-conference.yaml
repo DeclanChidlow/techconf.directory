@@ -1,0 +1,15 @@
+title: EuroSTAR Conference
+website: conference.eurostarsoftwaretesting.com
+tags:
+  - data
+  - devops
+  - testing
+events:
+  2026:
+    dates:
+      start: 2026-06-15
+      end: 2026-06-18
+    format: in-person
+    location:
+      country: NO
+      city: Oslo

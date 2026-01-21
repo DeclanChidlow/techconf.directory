@@ -1,0 +1,15 @@
+title: CityJS New Delhi
+website: india.cityjsconf.org
+socials:
+  bluesky: cityjsconf.bsky
+tags:
+  - javascript
+events:
+  2026:
+    dates:
+      start: 2026-02-12
+      end: 2026-02-13
+    format: in-person
+    location:
+      country: IN
+      city: Delhi

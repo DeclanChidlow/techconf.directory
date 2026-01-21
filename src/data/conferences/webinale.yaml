@@ -1,0 +1,17 @@
+title: Webinale
+website: webinale.de
+socials:
+  bluesky: webinale.bsky.social
+tags:
+  - accessibility
+  - ux
+  - ai
+events:
+  2026:
+    dates:
+      start: 2026-06-08
+      end: 2026-06-12
+    format: in-person
+    location:
+      country: DE
+      city: Berlin

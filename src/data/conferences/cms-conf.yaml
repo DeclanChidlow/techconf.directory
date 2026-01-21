@@ -1,0 +1,13 @@
+title: CMS Conf
+website: cmsconf.com
+tags:
+  - content management systems
+events:
+  2026:
+    dates:
+      start: 2026-11-12
+      end: 2026-11-14
+    format: in-person
+    location:
+      country: PL
+      city: Gdynia

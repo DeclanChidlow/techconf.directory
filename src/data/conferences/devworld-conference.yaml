@@ -1,0 +1,15 @@
+title: Devworld Conference
+website: devworldconference.com
+socials:
+  bluesky: devworldconference.bsky.social
+tags:
+  - general
+events:
+  2026:
+    dates:
+      start: 2026-05-07
+      end: 2026-05-08
+    format: in-person
+    location:
+      country: NL
+      city: Amsterdam

@@ -1,0 +1,14 @@
+title: Dutch AI Conference
+website: aiconference.nl
+tags:
+  - data
+  - ai
+events:
+  2026:
+    dates:
+      start: 2026-03-11
+      end: 2026-03-12
+    format: in-person
+    location:
+      country: NL
+      city: Amsterdam

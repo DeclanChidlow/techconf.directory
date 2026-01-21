@@ -1,0 +1,13 @@
+title: SymfonyLive Berlin
+website: live.symfony.com
+tags:
+  - php
+events:
+  2026:
+    dates:
+      start: 2026-04-23
+      end: 2026-04-24
+    format: in-person
+    location:
+      country: DE
+      city: Berlin

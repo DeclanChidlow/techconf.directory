@@ -17,27 +17,27 @@
 			${ conference.socials?.linkedin ? `<a href="https://www.linkedin.com/company/${ conference.socials.linkedin }/">${ linkedin_icon }</a>` : '' }
 		</div>
 
-		${ Tree.length(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now())) > 0 ? `
+		${ Tree.size(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now())) > 0 ? `
 			<h2>Upcoming Events</h2>
 			<ul>
 				${ Tree.map(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now()), (event, year) => `
 					<li>
 						<h3>${year}:</h3>
-						<p>${ functions/pretty-date.js(event.dates.start) } ${ event.dates.end ? `to ${ functions/pretty-date.js(event.dates.end) }` : ''}</p>
-						<p>${event.location.city}, ${ new Intl.DisplayNames(["en"], { type: "region" }).of(event.location.country) }</p>
+						<p>${ functions/pretty-date.js(event.dates.start) } ${ event.dates.end ? `to ${ functions/pretty-date.js(event.dates.end) }` : '' }</p>
+						${ event.location ? `<p>${event.location.city}, ${ new Intl.DisplayNames(["en"], { type: "region" }).of(event.location.country) }</p>` : '' }
 						${ event.cfp_open ? `<p class="cfp-open">Call for papers open!</p>` : "" }
 					</li>
 				`)}
 			</ul>
 		` : '' }
 
-		${ Tree.length(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) < Date.now())) > 0 ? `
+		${ Tree.size(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) < Date.now())) > 0 ? `
 			<h2>Past Events</h2>
 			<ul>
 				${ Tree.map(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) < Date.now()), (event, year) => `
 					<li>
 						<h3>${year}:</h3>
-						<p>${ functions/pretty-date.js(event.dates.start) } ${ event.dates.end ? `to ${ functions/pretty-date.js(event.dates.end) }` : ''}</p>
+						<p>${ functions/pretty-date.js(event.dates.start) } ${ event.dates.end ? `to ${ functions/pretty-date.js(event.dates.end) }` : '' }</p>
 						${ event.location ? `<p>${event.location.city}, ${ new Intl.DisplayNames(["en"], { type: "region" }).of(event.location.country) }</p>` : '' }
 					</li>
 				`)}

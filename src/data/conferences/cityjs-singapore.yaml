@@ -1,0 +1,15 @@
+title: CityJS Singapore
+website: singapore.cityjsconf.org
+socials:
+  bluesky: cityjsconf.bsky
+tags:
+  - javascript
+events:
+  2026:
+    dates:
+      start: 2026-02-04
+      end: 2026-02-06
+    format: in-person
+    location:
+      country: SG
+      city: Paya Lebar

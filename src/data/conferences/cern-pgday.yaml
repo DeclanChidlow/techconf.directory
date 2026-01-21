@@ -1,0 +1,17 @@
+title: CERN PGDay
+website: www.swisspug.org
+socials:
+  fediverse: fosstodon.org/@swisspug
+tags:
+  - data
+  - networking
+  - open-source
+events:
+  2026:
+    dates:
+      start: 2026-02-06
+      end: 2026-02-06
+    format: in-person
+    location:
+      country: CH
+      city: Geneva

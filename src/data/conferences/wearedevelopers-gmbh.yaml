@@ -1,0 +1,13 @@
+title: WeAreDevelopers GmbH
+website: https://www.wearedevelopers.com/world-congress
+tags:
+  - general
+events:
+  2026:
+    dates:
+      start: 2026-07-08
+      end: 2026-07-10
+    format: in-person
+    location:
+      country: DE
+      city: Berlin

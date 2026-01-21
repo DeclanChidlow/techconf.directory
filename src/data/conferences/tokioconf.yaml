@@ -1,0 +1,16 @@
+title: TokioConf
+website: www.tokioconf.com
+socials:
+  bluesky: tokioconf.com
+  fediverse: hachyderm.io/@tokioconf
+tags:
+  - rust
+events:
+  2026:
+    dates:
+      start: 2026-04-20
+      end: 2026-04-22
+    format: in-person
+    location:
+      country: US
+      city: Portland

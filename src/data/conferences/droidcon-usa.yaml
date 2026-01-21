@@ -1,0 +1,17 @@
+title: droidcon USA
+website: usa.droidcon.com
+socials:
+  bluesky: droidcon.bsky.social
+  fediverse: androiddev.social@droidcon
+tags:
+  - android
+  - kotlin
+events:
+  2026:
+    dates:
+      start: 2026-07-16
+      end: 2026-07-17
+    format: in-person
+    location:
+      country: US
+      city: Orlando

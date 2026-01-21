@@ -1,0 +1,12 @@
+title: PHP UK
+website: www.phpconference.co.uk
+tags:
+  - php
+events:
+  2026:
+    dates:
+      start: 2026-02-20
+    format: in-person
+    location:
+      country: GB
+      city: London

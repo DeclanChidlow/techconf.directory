@@ -1,0 +1,17 @@
+title: droidcon London
+website: london.droidcon.com
+socials:
+  bluesky: droidcon.bsky.social
+  fediverse: androiddev.social/@droidcon
+tags:
+  - android
+  - networking
+events:
+  2026:
+    dates:
+      start: 2026-12-09
+      end: 2026-12-10
+    format: in-person
+    location:
+      country: GB
+      city: London

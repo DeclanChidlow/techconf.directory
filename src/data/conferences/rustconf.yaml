@@ -1,0 +1,13 @@
+title: RustConf
+website: rustconf.com
+tags:
+  - rust
+events:
+  2026:
+    dates:
+      start: 2026-09-08
+      end: 2026-09-11
+    format: in-person
+    location:
+      country: CA
+      city: Montreal

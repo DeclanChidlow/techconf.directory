@@ -1,0 +1,13 @@
+title: API Conference
+website: apiconference.net/london
+tags:
+  - api
+events:
+  2026:
+    dates:
+      start: "2026-05-11"
+      end: "2026-05-15"
+    format: in-person
+    location:
+      country: GB
+      city: London

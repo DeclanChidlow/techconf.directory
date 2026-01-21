@@ -1,0 +1,15 @@
+title: Dutch PHP Conference
+website: phpconference.nl
+socials:
+  fediverse: mastodon.social/@dpc_ibuildings
+tags:
+  - php
+events:
+  2026:
+    dates:
+      start: 2026-03-10
+      end: 2026-03-13
+    format: in-person
+    location:
+      country: NL
+      city: Amsterdam

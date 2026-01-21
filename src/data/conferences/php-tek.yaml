@@ -1,0 +1,18 @@
+title: PHP Tek
+website: phptek.io
+socials:
+  bluesky: phparch.com
+  fediverse: phparch.social/@phptek
+tags:
+  - api
+  - data
+  - php
+events:
+  2026:
+    dates:
+      start: 2026-05-19
+      end: 2026-05-21
+    format: in-person
+    location:
+      country: US
+      city: Chicago

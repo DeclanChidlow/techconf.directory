@@ -1,0 +1,13 @@
+title: swiftCon
+website: www.nextappcon.com/swiftcon
+tags:
+  - ios
+events:
+  2026:
+    dates:
+      start: 2026-10-07
+      end: 2026-10-09
+    format: in-person
+    location:
+      country: DE
+      city: Berlin

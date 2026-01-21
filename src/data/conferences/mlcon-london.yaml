@@ -1,0 +1,16 @@
+title: MLcon London
+website: mlconference.ai/london
+socials:
+  bluesky: mlcon.bsky.social
+tags:
+  - data
+  - ai
+events:
+  2026:
+    dates:
+      start: 2026-05-11
+      end: 2026-05-15
+    format: in-person
+    location:
+      country: GB
+      city: London

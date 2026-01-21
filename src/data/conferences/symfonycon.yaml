@@ -1,0 +1,13 @@
+title: SymfonyCon
+website: live.symfony.com
+tags:
+  - php
+events:
+  2026:
+    dates:
+      start: 2026-11-26
+      end: 2026-11-27
+    format: in-person
+    location:
+      country: PL
+      city: Warsaw

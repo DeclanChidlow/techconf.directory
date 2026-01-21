@@ -1,0 +1,17 @@
+title: Basta! Frankfurt
+website: https://basta.net/frankfurt
+socials:
+  bluesky: bastacon.bsky.social
+tags:
+  - dotnet
+  - ai
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-03-02
+      end: 2026-03-06
+    format: in-person
+    location:
+      country: DE
+      city: Frankfurt

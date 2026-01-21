@@ -1,0 +1,15 @@
+title: JAX
+website: jax.de/mainz
+socials:
+  bluesky: jaxkonferenz.bsky.social
+tags:
+  - java
+events:
+  2026:
+    dates:
+      start: 2026-05-04
+      end: 2026-05-08
+    format: in-person
+    location:
+      country: DE
+      city: Mainz

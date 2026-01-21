@@ -1,0 +1,16 @@
+title: EuroRust
+website: eurorust.eu
+socials:
+  bluesky: eurorust.eu
+  fediverse: fosstodon.org/@eurorust
+tags:
+  - rust
+events:
+  2026:
+    dates:
+      start: 2026-10-14
+      end: 2026-10-17
+    format: in-person
+    location:
+      country: ES
+      city: Barcelona

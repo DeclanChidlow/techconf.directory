@@ -1,0 +1,16 @@
+title: Appdevcon
+website: appdevcon.nl
+socials:
+  fediverse: "mastodon.social/@appdevcon"
+tags:
+  - android
+  - ios
+events:
+  2026:
+    dates:
+      start: "2026-03-10"
+      end: "2026-03-13"
+    format: in-person
+    location:
+      country: NL
+      city: Amsterdam

@@ -1,0 +1,15 @@
+title: DevOpsCon San Diego
+website: devopscon.io/san-diego
+socials:
+  bluesky: devopscon.bluesky
+tags:
+  - devops
+events:
+  2026:
+    dates:
+      start: 2026-06-01
+      end: 2026-06-05
+    format: in-person
+    location:
+      country: US
+      city: San Diego

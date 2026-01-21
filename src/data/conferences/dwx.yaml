@@ -1,0 +1,16 @@
+title: DWX
+website: www.developer-world.de/dwx
+tags:
+  - data
+  - dotnet
+  - ai
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-06-29
+      end: 2026-07-02
+    format: in-person
+    location:
+      country: DE
+      city: Mannheim

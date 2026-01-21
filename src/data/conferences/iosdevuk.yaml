@@ -1,0 +1,15 @@
+title: iOSDevUK
+website: www.iosdevuk.com
+socials:
+  bluesky: iosdevuk.bsky.social
+tags:
+  - ios
+events:
+  2026:
+    dates:
+      start: 2026-09-07
+      end: 2026-09-10
+    format: in-person
+    location:
+      country: GB
+      city: Aberystwyth

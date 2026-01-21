@@ -1,0 +1,14 @@
+title: Hatch Conference
+website: www.hatchconference.com
+tags:
+  - ux
+  - design
+events:
+  2026:
+    dates:
+      start: 2026-09-16
+      end: 2026-09-18
+    format: in-person
+    location:
+      country: DE
+      city: Berlin

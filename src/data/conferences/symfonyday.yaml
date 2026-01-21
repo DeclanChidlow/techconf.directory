@@ -1,0 +1,13 @@
+title: SymfonyDay
+website: live.symfony.com
+tags:
+  - php
+events:
+  2026:
+    dates:
+      start: 2026-06-04
+      end: 2026-06-04
+    format: in-person
+    location:
+      country: CA
+      city: Montreal

@@ -1,0 +1,15 @@
+title: FOSS Backstage
+website: foss-backstage.de
+socials:
+  fediverse: floss.social/FOSSBackstage
+tags:
+  - open-source
+events:
+  2026:
+    dates:
+      start: 2026-03-16
+      end: 2026-03-17
+    format: in-person
+    location:
+      country: DE
+      city: Berlin

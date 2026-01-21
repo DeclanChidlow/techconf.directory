@@ -1,0 +1,16 @@
+title: SCaLE
+website: www.socallinuxexpo.org
+socials:
+  bluesky: socallinuxexpo.bsky.social
+  fediverse: social.linux.pizza/@socallinuxexpo
+tags:
+  - open-source
+events:
+  2026:
+    dates:
+      start: 2026-03-05
+      end: 2026-03-08
+    format: in-person
+    location:
+      country: US
+      city: Pasadena

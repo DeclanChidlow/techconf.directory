@@ -1,0 +1,14 @@
+title: WordCamp Europe
+website: europe.wordcamp.org
+tags:
+  - php
+  - content management systems
+events:
+  2026:
+    dates:
+      start: 2026-06-04
+      end: 2026-06-06
+    format: in-person
+    location:
+      country: PL
+      city: Kraków

@@ -1,0 +1,13 @@
+title: KubeCon + CloudNativeCon Europe
+website: events.linuxfoundation.org/kubecon-cloudnativecon-europe-2026
+tags:
+  - devops
+events:
+  2026:
+    dates:
+      start: 2026-03-23
+      end: 2026-03-26
+    format: in-person
+    location:
+      country: NL
+      city: Amsterdam

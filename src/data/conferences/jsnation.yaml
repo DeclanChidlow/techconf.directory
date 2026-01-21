@@ -1,0 +1,15 @@
+title: JSNation
+website: jsnation.com
+socials:
+  bluesky: jsnation.gitnation.org
+tags:
+  - javascript
+events:
+  2026:
+    dates:
+      start: 2026-06-11
+      end: 2026-06-15
+    format: in-person
+    location:
+      country: NL
+      city: Amsterdam

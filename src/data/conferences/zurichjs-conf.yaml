@@ -1,0 +1,13 @@
+title: ZurichJS Conf
+website: conf.zurichjs.com
+tags:
+  - javascript
+events:
+  2026:
+    dates:
+      start: 2026-09-10
+      end: 2026-09-11
+    format: in-person
+    location:
+      country: CH
+      city: Zurich

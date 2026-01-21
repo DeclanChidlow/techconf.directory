@@ -1,0 +1,16 @@
+title: MLcon San Diego
+website: mlconference.ai/san-diego
+socials:
+  bluesky: mlcon.bsky.social
+tags:
+  - data
+  - ai
+events:
+  2026:
+    dates:
+      start: 2026-06-01
+      end: 2026-06-05
+    format: in-person
+    location:
+      country: US
+      city: San Diego

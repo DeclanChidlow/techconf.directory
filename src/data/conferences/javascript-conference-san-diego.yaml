@@ -1,0 +1,15 @@
+title: JavaScript Conference San Diego
+website: javascript-conference.com/san-diego
+socials:
+  bluesky: javascriptcon.bsky.social
+tags:
+  - javascript
+events:
+  2026:
+    dates:
+      start: 2026-06-01
+      end: 2026-06-06
+    format: in-person
+    location:
+      country: US
+      city: San Diego

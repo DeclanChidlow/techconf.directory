@@ -1,0 +1,16 @@
+title: KotlinConf
+website: kotlinconf.com
+socials:
+  bluesky: kotlinconf.com
+tags:
+  - kotlin
+  - android
+events:
+  2026:
+    dates:
+      start: 2026-05-21
+      end: 2026-05-22
+    format: in-person
+    location:
+      country: DE
+      city: Munich

@@ -1,0 +1,15 @@
+title: VueconfUS
+website: vueconf.us
+tags:
+  - javascript
+  - open-source
+  - vue
+events:
+  2026:
+    dates:
+      start: 2026-05-19
+      end: 2026-05-21
+    format: in-person
+    location:
+      country: US
+      city: Atlanta
