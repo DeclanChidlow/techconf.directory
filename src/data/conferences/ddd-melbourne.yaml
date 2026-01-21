@@ -1,5 +1,10 @@
 title: DDD Melbourne
 website: www.dddmelbourne.com
+socials:
+  bluesky: dddmelbourne.bsky.social
+  linkedin: dddmelbourne
+tags:
+  - general
 events:
   2026:
     dates:

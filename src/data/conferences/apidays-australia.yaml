@@ -1,0 +1,16 @@
+title: apidays Australia
+website: www.apidays.global/events/australia
+socials:
+  youtube: apidays
+  linkedin: apidays-conferences
+tags:
+  - api
+events:
+  2026:
+    dates:
+      start: 2026-10-28
+      end: 2026-10-29
+    format: in-person
+    location:
+      country: AU
+      city: Melbourne

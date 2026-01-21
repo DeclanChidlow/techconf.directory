@@ -1,0 +1,18 @@
+title: PyCon AU
+website: pycon.org.au
+socials:
+  bluesky: pyconau.bsky.social
+  fediverse: mastodon.pycon.org.au/@pyconau 
+  youtube: pyconau 
+  linkedin: pyconau 
+tags:
+  - python
+events:
+  2025:
+    dates:
+      start: 2025-08-26
+      end: 2025-08-30
+    format: in-person
+    location:
+      country: AU
+      city: Brisbane

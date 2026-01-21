@@ -1,5 +1,11 @@
 title: DDD Perth
 website: dddperth.com
+socials:
+  bluesky: dddperth.bsky.social
+  youtube: DDDPerth
+  linkedin: ddd-perth
+tags:
+  - general
 events:
   2025:
     dates:

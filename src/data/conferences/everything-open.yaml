@@ -1,0 +1,16 @@
+title: Everything Open
+website: everythingopen.au
+socials:
+  bluesky: everythingopen.au
+  fediverse: fosstodon.org/@EverythingOpen
+  youtube: EverythingOpen
+  linkedin: everythingopen
+events:
+  2026:
+    dates:
+      start: 2026-01-21
+      end: 2026-01-23
+    format: in-person
+    location:
+      country: AU
+      city: Canberra
