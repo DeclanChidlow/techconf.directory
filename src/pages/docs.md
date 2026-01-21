@@ -115,7 +115,7 @@ End date of the event in YYYY-MM-DD format. Optional if the event is one day.
 **upcoming_events.format**
 string
 
-Event format. Available values: in-person, online, hybrid.
+Event format. Available values: in-person, virtual, hybrid.
 
 ---
 
@@ -209,7 +209,7 @@ End date of the event in YYYY-MM-DD format. Optional if the event is one day.
 **events.format**
 string
 
-Event format. Available values: in-person, online, hybrid.
+Event format. Available values: in-person, virtual, hybrid.
 
 ---
 

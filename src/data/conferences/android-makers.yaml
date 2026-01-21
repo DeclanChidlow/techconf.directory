@@ -2,15 +2,15 @@ title: AndroidMakers
 website: droidcon.wixsite.com/website-28
 socials:
   bluesky: droidcon.bsky.social
-  fediverse: "@droidcon@androiddev.social"
+  fediverse: androiddev.social/@droidcon
 tags:
   - android
   - kotlin
 events:
   2026:
     dates:
-      start: "2026-04-09"
-      end: "2026-04-10"
+      start: 2026-04-09
+      end: 2026-04-10
     format: in-person
     location:
       country: FR

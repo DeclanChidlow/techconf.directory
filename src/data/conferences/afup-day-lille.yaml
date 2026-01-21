@@ -2,14 +2,13 @@ title: AFUP Day Lille
 website: event.afup.org/afup-day-2026/afup-day-2026-lille
 socials:
   bluesky: afup.org
-  fediverse: "@afup@mastodon.online"
+  fediverse: mastodon.online/@afup
 tags:
   - php
 events:
   2026:
     dates:
-      start: "2026-05-22"
-      end: "2026-05-22"
+      start: 2026-05-22
     format: in-person
     location:
       country: FR

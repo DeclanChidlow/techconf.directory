@@ -24,7 +24,7 @@
 			<summary>Format</summary>
 			<fieldset id="format-list">
 				<label><input type="checkbox" name="format" value="in-person"> In-Person</label>
-				<label><input type="checkbox" name="format" value="online"> Online</label>
+				<label><input type="checkbox" name="format" value="virtual"> Virtual</label>
 				<label><input type="checkbox" name="format" value="hybrid"> Hybrid</label>
 			</fieldset>
 		</details>

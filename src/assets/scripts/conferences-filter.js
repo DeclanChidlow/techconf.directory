@@ -17,7 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
 		list: document.querySelector("ol"),
 	};
 
-	dom.form.style.display = "flex";
+	if (dom.form) dom.form.style.display = "flex";
+
+	document.addEventListener("click", (e) => {
+		document.querySelectorAll("details.custom-select[open]").forEach((detail) => {
+			if (!detail.contains(e.target)) {
+				detail.removeAttribute("open");
+			}
+		});
+	});
 
 	let conferencesData = [];
 
@@ -88,9 +96,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 			const validEvents = Object.values(conf.upcoming_events || {}).filter((event) => {
 				if (filters.countries.length > 0 && !filters.countries.includes(event.location?.country)) return false;
+
 				if (filters.formats.length > 0 && !filters.formats.includes(event.format?.toLowerCase())) return false;
+
 				if (filters.start && (event.dates?.end || "") < filters.start) return false;
 				if (filters.end && (event.dates?.start || "") > filters.end) return false;
+
 				return true;
 			});
 
@@ -101,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
 						(evt) => `
 						<li>
 							${formatDate(evt.dates.start)} ${evt.dates.end ? ` to ${formatDate(evt.dates.end)}` : ""}
-							<p>${evt.location ? `${evt.location.city}, ${getCountryName(evt.location.country)}` : "Online"}</p>
+							<p>${evt.location ? `${evt.location.city}, ${getCountryName(evt.location.country)}` : "Virtual"}</p>
 							${evt.cfp_open ? '<p class="cfp-open">Call for papers open!</p>' : ""}
 						</li>
 						`,
@@ -115,5 +126,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 
 	dom.form.addEventListener("change", renderConferences);
-	dom.form.addEventListener("reset", () => setTimeout(renderConferences, 0));
+
+	dom.form.addEventListener("reset", () => {
+		setTimeout(renderConferences, 0);
+	});
 });

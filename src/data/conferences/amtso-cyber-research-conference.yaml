@@ -5,8 +5,8 @@ tags:
 events:
   2026:
     dates:
-      start: "2026-10-20"
-      end: "2026-10-21"
+      start: 2026-10-20
+      end: 2026-10-21
     format: in-person
     location:
       country: BE
