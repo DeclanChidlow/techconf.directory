@@ -4,8 +4,7 @@
 
 main header {
 	width: 100%;
-	margin-block-start: 6rem;
-	margin-block-end: 8rem;
+	margin-block: 6rem;
 
 	h1 {
 		font-size: 4rem;
@@ -27,7 +26,7 @@ main header {
 
 section {
 	max-width: 90ch;
-	margin-block: 4rem;
+	margin-block: 10rem;
 
 	h2 {
 		margin-block-end: 1rem;
@@ -37,8 +36,12 @@ section {
 		color: currentColor;
 	}
 
-	ol {
-		list-style: none;
+	> ul {
+		margin-inline-start: 2rem;
+
+		> li {
+			margin-block: 2rem;
+		}
 
 		a {
 			text-decoration: none;
@@ -48,22 +51,17 @@ section {
 				text-decoration: underline;
 			}
 		}
-
-		> li {
-			border-bottom: 2px solid grey;
-			padding-inline: 1rem;
-			padding-block: 1rem;
-		}
 	}
 
-	ul {
+	ul ul {
 		list-style: none;
 	}
 
 	> a {
 		display: block;
-		width: fit-content;
-		margin-inline-start: auto;
-		font-style: italic;
+		margin-block-start: 2rem;
+		margin-inline: auto;
+		font-weight: bold;
+		color: var(--red);
 	}
 }

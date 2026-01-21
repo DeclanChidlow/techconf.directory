@@ -11,12 +11,10 @@
 	</header>
 
 	<section>
-		<h2>Upcoming Conferences:</h2>
+		<h2>Some Upcoming Conferences:</h2>
 
-		<a href="conferences">View All 🠖</a>
-
-		<ol>
-		  ${ Tree.map(Tree.take(Tree.filter(conferences, (conference) => Tree.size(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now())) > 0	), 10 ), (conference) => `
+		<ul>
+		  ${ Tree.map(Tree.take(Tree.filter(conferences, (conference) => Tree.size(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now())) > 0	), 5 ), (conference) => `
 			  <li>
 				<h3><a href="/conferences/${ conference.title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "") }">
 					${ conference.title }
@@ -26,14 +24,16 @@
 					${ Tree.map(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now()), (event) => `
 						<li>
 							<p>${ functions/pretty-date.js(event.dates.start) }
-							${ event.dates.end ? `to ${ functions/pretty-date.js(event.dates.end) }` : '' }</p>
-							<p>${ event.location.city }, ${ new Intl.DisplayNames(["en"], { type: "region" }) .of(event.location.country) }</p>
+							${ event.dates.end ? `to ${ functions/pretty-date.js(event.dates.end) }` : '' } in ${ event.location.city }, ${ new Intl.DisplayNames(["en"], { type: "region" }) .of(event.location.country) }</p>
 						</li>
 					`)}
 				</ul>
 			  </li>
 			`)}
-		</ol>
+		</ul>
+
+		<a href="conferences">View All Conferences ➤</a>
+
 	</section>
 
 	<!--
