@@ -1,0 +1,25 @@
+title: DEF CON
+website: defcon.org
+socials:
+  bluesky: defcon.bsky.social 
+  fediverse: defcon.social/@defcon
+  youtube: DEFCONConference
+tags:
+  - cybersecurity
+events:
+  2027:
+    dates:
+      start: 2027-08-05
+      end: 2027-08-08
+    format: in-person
+    location:
+      country: US
+      city: Las Vegas
+  2026:
+    dates:
+      start: 2026-08-06
+      end: 2026-08-09
+    format: in-person
+    location:
+      country: US
+      city: Las Vegas
