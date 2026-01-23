@@ -1,0 +1,15 @@
+title: DrupalCamp Burkina Faso
+website: www.drupal.bf
+tags:
+  - php
+  - content management systems
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-04-24
+      end: 2026-04-25
+    format: hybrid
+    location:
+      country: BF
+      city: Ouagadougou

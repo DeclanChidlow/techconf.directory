@@ -1,0 +1,15 @@
+title: DrupalCon Chicago
+website: events.drupal.org
+tags:
+  - php
+  - content management systems
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-03-23
+      end: 2026-03-26
+    format: in-person
+    location:
+      country: US
+      city: Chicago

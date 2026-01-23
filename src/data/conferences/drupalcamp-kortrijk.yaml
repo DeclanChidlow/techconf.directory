@@ -1,0 +1,15 @@
+title: DrupalCamp Kortrijk
+website: drupalcamp.be
+tags:
+  - php
+  - content management systems
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-06-29
+      end: 2026-06-30
+    format: in-person
+    location:
+      country: BE
+      city: Kortrijk

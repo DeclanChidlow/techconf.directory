@@ -1,0 +1,15 @@
+title: DrupalCamp NJ
+website: www.drupalcampnj.org
+tags:
+  - php
+  - content management systems
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-03-12
+      end: 2026-03-14
+    format: in-person
+    location:
+      country: US
+      city: Princeton

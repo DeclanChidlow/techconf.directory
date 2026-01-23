@@ -1,0 +1,14 @@
+title: WordCamp Zaragoza
+website: zaragoza.wordcamp.org
+tags:
+  - php
+  - content management systems
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-01-24
+    format: in-person
+    location:
+      country: ES
+      city: Zaragoza

@@ -1,0 +1,15 @@
+title: DrupalCamp Costa Rica
+website: drupalcamp.cr
+tags:
+  - php
+  - content management systems
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-02-26
+      end: 2026-02-28
+    format: in-person
+    location:
+      country: CR
+      city: Guanacaste

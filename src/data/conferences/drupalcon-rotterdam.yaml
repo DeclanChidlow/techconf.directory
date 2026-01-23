@@ -1,0 +1,15 @@
+title: DrupalCon Rotterdam
+website: events.drupal.org
+tags:
+  - php
+  - content management systems
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-09-28
+      end: 2026-10-01
+    format: in-person
+    location:
+      country: NL
+      city: Rotterdam

@@ -1,0 +1,15 @@
+title: Florida DrupalCamp
+website: www.fldrupal.camp
+tags:
+  - php
+  - content management systems
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-02-20
+      end: 2026-02-22
+    format: in-person
+    location:
+      country: US
+      city: Florida

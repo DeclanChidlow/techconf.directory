@@ -1,0 +1,14 @@
+title: WordCamp Slovenia
+website: slovenia.wordcamp.org
+tags:
+  - php
+  - content management systems
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-05-16
+    format: in-person
+    location:
+      country: SI
+      city: Ljubljana

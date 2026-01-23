@@ -1,0 +1,14 @@
+title: WordCamp Nice
+website: nice.wordcamp.org
+tags:
+  - php
+  - content management systems
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-03-06
+    format: in-person
+    location:
+      country: FR
+      city: Nice

@@ -1,0 +1,15 @@
+title: WordCamp Nepal
+website: nepal.wordcamp.org
+tags:
+  - php
+  - content management systems
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-01-23
+      end: 2026-01-24
+    format: in-person
+    location:
+      country: NP
+      city: Butwal

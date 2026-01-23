@@ -1,0 +1,15 @@
+title: Stanford WebCamp
+website: webcamp.stanford.edu
+tags:
+  - php
+  - content management systems
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-04-30
+      end: 2026-05-01
+    format: hybrid
+    location:
+      country: US
+      city: Palo Alto

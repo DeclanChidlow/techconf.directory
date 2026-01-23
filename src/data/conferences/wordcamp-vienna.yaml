@@ -1,0 +1,15 @@
+title: WordCamp Vienna
+website: vienna.wordcamp.org
+tags:
+  - php
+  - content management systems
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-04-10
+      end: 2026-04-11
+    format: in-person
+    location:
+      country: AT
+      city: Vienna

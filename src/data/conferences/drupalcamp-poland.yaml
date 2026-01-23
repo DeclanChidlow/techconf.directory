@@ -1,5 +1,5 @@
-title: WordCamp Europe
-website: europe.wordcamp.org
+title: DrupalCamp Poland
+website: www.drupalcamp.pl/pl
 tags:
   - php
   - content management systems
@@ -7,9 +7,8 @@ tags:
 events:
   2026:
     dates:
-      start: 2026-06-04
-      end: 2026-06-06
+      start: 2026-05-16
     format: in-person
     location:
       country: PL
-      city: Kraków
+      city: Wrocław

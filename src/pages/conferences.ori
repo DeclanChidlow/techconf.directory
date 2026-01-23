@@ -44,7 +44,7 @@
     <ol>
 		${ Tree.map(conferences, (conference) => Tree.size(Tree.filter(conference.events, (event) => Date.parse(event.dates.end) >= Date.now())) > 0 ? `
 			<li>
-				<h3><a href="/conferences/${ conference.title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "") }">${ conference.title }</a></h3>
+				<h2><a href="/conferences/${ conference.title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "") }">${ conference.title }</a></h2>
 				<ul>
 					${ Tree.map(Tree.filter(conference.events, (event) => Date.parse(event.dates.end) >= Date.now()), (event, year) => `
 						<li>

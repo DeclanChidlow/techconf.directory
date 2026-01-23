@@ -1,0 +1,15 @@
+title: WordCamp Mannheim
+website: mannheim.wordcamp.org
+tags:
+  - php
+  - content management systems
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-07-03
+      end: 2026-07-04
+    format: in-person
+    location:
+      country: DE
+      city: Mannheim

@@ -1,0 +1,15 @@
+title: DrupalCamp England
+website: www.drupalcampengland.org
+tags:
+  - php
+  - content management systems
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-02-28
+      end: 2026-03-01
+    format: in-person
+    location:
+      country: GB
+      city: Manchester

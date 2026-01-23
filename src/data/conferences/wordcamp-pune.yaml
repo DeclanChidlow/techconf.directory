@@ -1,0 +1,14 @@
+title: WordCamp Pune
+website: pune.wordcamp.org
+tags:
+  - php
+  - content management systems
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-02-08
+    format: in-person
+    location:
+      country: IN
+      city: Pune

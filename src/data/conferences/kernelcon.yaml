@@ -1,0 +1,14 @@
+title: Kernelcon
+website: kernelcon.org
+tags:
+  - cybersecurity
+  - open-source
+events:
+  2026:
+    dates:
+      start: 2026-04-07
+      end: 2026-04-10
+    format: in-person
+    location:
+      country: US
+      city: Omaha

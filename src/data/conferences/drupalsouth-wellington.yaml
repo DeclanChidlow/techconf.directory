@@ -1,0 +1,15 @@
+title: DrupalSouth Wellington
+website: drupalsouth.org
+tags:
+  - php
+  - content management systems
+  - web development
+events:
+  2026:
+    dates:
+      start: 2026-05-12
+      end: 2026-05-14
+    format: in-person
+    location:
+      country: NZ
+      city: Wellington
