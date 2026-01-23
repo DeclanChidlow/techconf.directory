@@ -13,3 +13,5 @@
 <br/>
 
 This site is built with Web Origami. You can run it locally by downloading the dependencies from npm (`npm install`) and then starting a local development server with `npm run dev`.
+
+Conference data is stored in `src/data/conferences/`. Speaker data is stored in `src/data/speakers/`.
