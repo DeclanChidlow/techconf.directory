@@ -1,0 +1,18 @@
+title: foss-north
+website: foss-north.se
+socials:
+  fediverse: fosstodon.org/@foss_north
+  youtube: fossnorth
+  linkedin: foss-north
+tags:
+  - open-source
+events:
+  2026:
+    dates:
+      start: 2026-04-27
+      end: 2026-04-28
+    format: in-person
+    location:
+      country: SE
+      city: Gothenburg
+    cfp_open: true
