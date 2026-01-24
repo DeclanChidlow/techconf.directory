@@ -1,6 +1,6 @@
 (conference) => main_template.ori({
 	title: conference.title
-	canonical: `/conferences/${ conference.title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "") }`
+	canonical: `/conferences/${ conference.slug }`
 	stylesheet: "pages/conferences-individual.css"
 
 	_body: `

@@ -14,9 +14,9 @@
 		<h2>Some Upcoming Conferences:</h2>
 
 		<ul>
-		  ${ Tree.map(Tree.take(Tree.shuffle(Tree.filter(conferences, (conference) => Tree.size(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now())) > 0 )), 5 ), (conference) => `
+		  ${ Tree.map(Tree.take(Tree.shuffle(Tree.filter(conferences, (conference) => Tree.size(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now())) > 0 )), 5 ), (conference, filename) => `
 			  <li>
-				<h3><a href="/conferences/${ conference.title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "") }">
+				<h3><a href="/conferences/${ filename.replace(/\.yaml$/, "") }">
 					${ conference.title }
 				</a></h3>
 
