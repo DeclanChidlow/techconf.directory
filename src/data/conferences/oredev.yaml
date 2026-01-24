@@ -1,0 +1,17 @@
+title: Øredev
+website: oredev.org
+socials:
+  bluesky: oredev.org
+  youtube: OredevConference
+  linkedin: oredev
+tags:
+  - software-development
+events:
+  2026:
+    dates:
+      start: 2026-11-04
+      end: 2026-11-06
+    format: in-person
+    location:
+      country: SE
+      city: Malmö
