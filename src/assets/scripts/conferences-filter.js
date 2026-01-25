@@ -38,27 +38,32 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 
 	function populateCheckboxes(data) {
-		const countryCodes = new Set();
-		const tags = new Set();
+		const countryCounts = {};
+		const tagCounts = {};
 
 		data.forEach((conf) => {
-			(conf.tags || []).forEach((t) => tags.add(t));
+			(conf.tags || []).forEach((t) => {
+				tagCounts[t] = (tagCounts[t] || 0) + 1;
+			});
 			Object.values(conf.upcoming_events || {}).forEach((e) => {
-				if (e.location?.country) countryCodes.add(e.location.country);
+				if (e.location?.country) {
+					const code = e.location.country;
+					countryCounts[code] = (countryCounts[code] || 0) + 1;
+				}
 			});
 		});
 
-		Array.from(countryCodes)
-			.map((code) => ({ code, name: getCountryName(code) }))
+		Object.keys(countryCounts)
+			.map((code) => ({ code, name: getCountryName(code), count: countryCounts[code] }))
 			.sort((a, b) => a.name.localeCompare(b.name))
-			.forEach(({ code, name }) => {
-				dom.countriesContainer.appendChild(createCheckbox("countries", code, name));
+			.forEach(({ code, name, count }) => {
+				dom.countriesContainer.appendChild(createCheckbox("countries", code, `${name} (${count})`));
 			});
 
-		Array.from(tags)
+		Object.keys(tagCounts)
 			.sort()
 			.forEach((tag) => {
-				dom.tagsContainer.appendChild(createCheckbox("tags", tag, tag));
+				dom.tagsContainer.appendChild(createCheckbox("tags", tag, `${tag} (${tagCounts[tag]})`));
 			});
 	}
 
