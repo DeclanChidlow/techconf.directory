@@ -11,7 +11,7 @@
 	conferences/ = {
 		index.html = pages/conferences.ori(conferences_data.ori)
 		...Tree.mapExtension(conferences_data.ori, ".yaml->.html", {
-			value: conference_template.ori
+			value: (conference, filename) => conference_template.ori({ ...conference, slug: filename.replace(/\.yaml$/, "") })
 		})
 	}
 
