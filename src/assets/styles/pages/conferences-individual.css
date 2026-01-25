@@ -24,3 +24,10 @@ ul {
 	list-style: none;
 	margin-inline-start: 2rem;
 }
+
+.travel-advisory {
+	margin-block-end: 2rem;
+	max-width: 75ch;
+	padding: 1rem;
+	border: 4px solid var(--red);
+}

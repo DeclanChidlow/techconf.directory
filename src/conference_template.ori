@@ -17,6 +17,8 @@
 			${ conference.socials?.linkedin ? `<a href="https://www.linkedin.com/company/${ conference.socials.linkedin }/">${ linkedin_icon }</a>` : '' }
 		</div>
 
+		${ conference.events.2026.location.country == "US" ? `<div class="travel-advisory"><h2>Travel Advisory</h2><p>Attendees should be aware that travel to and within the United States of America may present heightened risks for some individuals. Recent immigration enforcement actions have included aggressive use of force (including causing deaths) and expanded detention at or near borders. Transgender and gender-diverse travellers, in particular, may face increased scrutiny, misgendering, or denial of entry based on documentation or appearance. More broadly, the United States is experiencing political instability and the rapid expansion of authoritarian policies, sometimes implemented with little advance notice. Travellers are advised to review current conditions carefully, carry complete documentation, and assess personal risk before making travel plans. Consult your country's travel advisory for more information.</p></div>` : '' }
+
 		${ Tree.size(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now())) > 0 ? `
 			<h2>Upcoming Events</h2>
 			<ul>
