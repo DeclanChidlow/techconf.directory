@@ -20,7 +20,28 @@
 		${ conference.events[Tree.keys(conference.events).sort().pop()].location?.country === "US" ? `
 			<div class="travel-advisory">
 				<h2>Travel Advisory</h2>
-				<p>Attendees should be aware that travel to and within the United States of America presents heightened risks. Recent immigration enforcement actions have included aggressive use of force (including causing deaths) and expanded detention at or near borders. Transgender and gender-diverse travellers, in particular, may face increased scrutiny, misgendering, or denial of entry based on documentation or appearance. More broadly, the United States is experiencing political instability and the rapid expansion of authoritarian policies, sometimes implemented with little advance notice. Travellers are advised to review current conditions carefully, carry complete documentation, and assess personal risk before making travel plans. Consult your country's travel advisory for more information.</p>
+				<p>Attendees should be aware that travel to and within the United States of America presents heightened risks. Recent immigration enforcement actions have included aggressive use of force and expanded detention at or near borders. Transgender and gender-diverse travellers, in particular, may face increased scrutiny, misgendering, or denial of entry based on documentation or appearance. More broadly, the United States is experiencing political instability and the rapid expansion of authoritarian policies, sometimes implemented with little advance notice. Travellers are advised to review current conditions carefully, carry complete documentation, and assess personal risk before making travel plans. Consult your country's travel advisory for more information.</p>
+			</div>
+		` : '' }
+
+		${ conference.events[Tree.keys(conference.events).sort().pop()].location?.country === "BF" ? `
+			<div class="travel-advisory">
+				<h2>Travel Advisory</h2>
+				<p>Attendees should be aware that there is an ongoing and high threat of terrorism, violent crime, and kidnapping throughout Burkina Faso. Travellers are advised to review current conditions carefully and assess personal risk before making travel plans. Consult your country's travel advisory for more information.</p>
+			</div>
+		` : '' }
+
+		${ conference.events[Tree.keys(conference.events).sort().pop()].location?.country === "UG" ? `
+			<div class="travel-advisory">
+				<h2>Travel Advisory</h2>
+				<p>Attendees should be aware that there is a risk of civil unrest, and a significant threat of terrorism and violent crime in Uganda. Travel surrounding the border with South Sudan should be avoided entirely and further caution should be taken surrounding the border with the Democratic Republic of the Congo. Travellers are advised to review current conditions carefully and assess personal risk before making travel plans. Consult your country's travel advisory for more information.</p>
+			</div>
+		` : '' }
+
+		${ conference.events[Tree.keys(conference.events).sort().pop()].location?.country === "NE" ? `
+			<div class="travel-advisory">
+				<h2>Travel Advisory</h2>
+				<p>Attendees should be aware that there is an ongoing and high threat of terrorism, civil, unrest, violent crime, and kidnapping throughout Nigeria. Travel to and through several areas of the country should be avoided entirely. Travellers are advised to review current conditions carefully and assess personal risk before making travel plans. Consult your country's travel advisory for more information.</p>
 			</div>
 		` : '' }
 
