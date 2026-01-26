@@ -1,0 +1,13 @@
+title: TechBash
+website: techbash.com
+tags:
+  - general
+events:
+  2026:
+    dates:
+      start: 2026-10-13
+      end: 2026-10-16
+    format: in-person
+    location:
+      country: US
+      city: Pennsylvania

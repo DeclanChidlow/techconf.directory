@@ -1,0 +1,15 @@
+title: Stir Trek
+website: stirtrek.com
+socials:
+  bluesky: stirtrek.com
+  linkedin: stir-trek-conference-inc.
+tags:
+  - general
+events:
+  2026:
+    dates:
+      start: 2026-05-01
+    format: in-person
+    location:
+      country: US
+      city: Columbus

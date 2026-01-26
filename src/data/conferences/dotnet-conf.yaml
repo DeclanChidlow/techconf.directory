@@ -1,0 +1,10 @@
+title: .NET Conf
+website: www.dotnetconf.net
+tags:
+  - dotnet
+events:
+  2025:
+    dates:
+      start: 2025-11-12
+      end: 2025-11-14
+    format: virtual

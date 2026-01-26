@@ -1,0 +1,16 @@
+title: NDC Toronto
+website: ndctoronto.com
+socials:
+  youtube: ndcconferences
+  linkedin: ndc-conferences
+tags:
+  - general
+events:
+  2026:
+    dates:
+      start: 2026-05-05
+      end: 2026-05-08
+    format: in-person
+    location:
+      country: CA
+      city: Toronto

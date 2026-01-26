@@ -1,0 +1,13 @@
+title: Beer City Code
+website: www.beercitycode.com
+tags:
+  - general
+events:
+  2026:
+    dates:
+      start: 2026-08-14
+      end: 2026-08-15
+    format: in-person
+    location:
+      country: US
+      city: Grand Rapids

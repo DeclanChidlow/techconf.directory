@@ -1,5 +1,8 @@
-title: WeAreDevelopers World Congress North America
-website: www.wearedevelopers.com/world-congress-us
+title: Explore DDD Conference
+website: exploreddd.com
+socials:
+  youtube: exploreddd
+  linkedin: exploreddd
 tags:
   - general
 events:
@@ -10,4 +13,4 @@ events:
     format: in-person
     location:
       country: US
-      city: San Jose
+      city: Denver
