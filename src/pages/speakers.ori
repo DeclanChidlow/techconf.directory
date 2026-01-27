@@ -15,7 +15,7 @@
 		${ Tree.map(speakers, (speaker) => `
 			<li>
 				<h2>
-					<a href="/speakers/${ Origami.slug(speaker.name) }.html">${ speaker.name }</a>
+					<a href="/speakers/${ Origami.slug(speaker.name) }">${ speaker.name }</a>
 				</h2>
 			</li>
 		`)}

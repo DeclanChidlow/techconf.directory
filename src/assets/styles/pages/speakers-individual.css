@@ -5,6 +5,8 @@
 	padding-block: 0.5rem;
 	padding-inline: 0.5rem;
 	margin-block: 1rem;
+	margin-block-start: 2rem;
+	margin-block-end: 3rem;
 
 	a {
 		color: currentColor;
@@ -13,6 +15,13 @@
 	.website {
 		text-decoration: none;
 		flex-grow: 1;
+
+		img {
+			display: inline;
+			width: 1.5rem;
+			margin-inline-end: 1ch;
+			vertical-align: bottom;
+		}
 
 		&:hover {
 			text-decoration: underline;

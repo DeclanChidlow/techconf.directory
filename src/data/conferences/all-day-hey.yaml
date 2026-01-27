@@ -1,5 +1,9 @@
 title: All Day Hey!
 website: heypresents.com
+socials:
+  bluesky: heypresents.com
+  fediverse: mastodon.world/@heypresents
+  linkedin: heypresents
 tags:
   - front-end
   - web development

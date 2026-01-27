@@ -10,7 +10,7 @@
 		</header>
 
 		<div class="socials">
-			${ conference.website ? `<a href="https://${ conference.website }" class="website">${ conference.website }</a>` : '' }
+			${ conference.website ? `<a href="https://${ conference.website }" class="website"><img src="https://icons.duckduckgo.com/ip3/${ conference.website }.ico" width="24" alt="">${ conference.website }</a>` : '' }
 			${ conference.socials?.bluesky ? `<a href="https://bsky.app/profile/${ conference.socials.bluesky }">${ bluesky_icon }</a>` : '' }
 			${ conference.socials?.fediverse ? `<a href="https://${ conference.socials.fediverse }">${ fediverse_icon }</a>` : '' }
 			${ conference.socials?.youtube ? `<a href="https://www.youtube.com/@${ conference.socials.youtube }">${ youtube_icon }</a>` : '' }
