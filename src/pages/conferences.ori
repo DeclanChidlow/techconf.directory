@@ -22,16 +22,12 @@
 
 		<details class="custom-select" name="filter">
 			<summary>Format</summary>
-			<fieldset id="format-list">
-				<label><input type="checkbox" name="format" value="in-person"> In-Person</label>
-				<label><input type="checkbox" name="format" value="virtual"> Virtual</label>
-				<label><input type="checkbox" name="format" value="hybrid"> Hybrid</label>
-			</fieldset>
+			<fieldset id="formats-list"></fieldset>
 		</details>
 
 		<details class="custom-select" name="filter">
 			<summary>Date</summary>
-			<fieldset id="format-list">
+			<fieldset>
 				<label>From: <input type="date" id="date-start" name="date-start"></label>
 				<label>To: <input type="date" id="date-end" name="date-end"></label>
 			</fieldset>

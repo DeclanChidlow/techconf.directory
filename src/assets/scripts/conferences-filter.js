@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		form: document.getElementById("filter-form"),
 		countriesContainer: document.getElementById("countries-list"),
 		tagsContainer: document.getElementById("tags-list"),
+		formatsContainer: document.getElementById("formats-list"),
 		list: document.querySelector("ol"),
 	};
 
@@ -40,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	function populateCheckboxes(data) {
 		const countryCounts = {};
 		const tagCounts = {};
+		const formatCounts = {};
 
 		data.forEach((conf) => {
 			(conf.tags || []).forEach((t) => {
@@ -49,6 +51,11 @@ document.addEventListener("DOMContentLoaded", () => {
 				if (e.location?.country) {
 					const code = e.location.country;
 					countryCounts[code] = (countryCounts[code] || 0) + 1;
+				}
+
+				if (e.format) {
+					const fmt = e.format.toLowerCase();
+					formatCounts[fmt] = (formatCounts[fmt] || 0) + 1;
 				}
 			});
 		});
@@ -64,6 +71,13 @@ document.addEventListener("DOMContentLoaded", () => {
 			.sort()
 			.forEach((tag) => {
 				dom.tagsContainer.appendChild(createCheckbox("tags", tag, `${tag} (${tagCounts[tag]})`));
+			});
+
+		Object.keys(formatCounts)
+			.sort()
+			.forEach((fmt) => {
+				const label = fmt.charAt(0).toUpperCase() + fmt.slice(1);
+				dom.formatsContainer.appendChild(createCheckbox("format", fmt, `${label} (${formatCounts[fmt]})`));
 			});
 	}
 
