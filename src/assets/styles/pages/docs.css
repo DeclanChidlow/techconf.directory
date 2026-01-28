@@ -1,18 +1,24 @@
 details {
-	background: light-dark(#ffd7d7, #3f2b35);
-	margin-block: 2rem;
-	padding-block: 0.75rem;
-	padding-inline: 1rem;
+	background: oklch(from var(--lesser_red) calc(l - 0.2) c h);
+	color: light-dark(var(--white), currentColor);
 	border-radius: 0.5rem;
+	margin-block: 2rem;
 
 	summary {
+		background: var(--lesser_red);
+		padding-block: 0.75rem;
+		border-radius: 0.5rem;
+		padding-inline: 1rem;
+		box-shadow: 0 0.25rem 0.5rem rgb(0, 0, 0, 0.2);
+
 		.get {
 			font-size: 0.8rem;
 			font-weight: bold;
-			background: #3f3ac9;
+			background: var(--black);
 			color: var(--white);
 			padding-block: 0.2rem;
-			padding-inline: 1rem;
+			padding-inline: 0.5rem;
+			margin-inline: 1ch;
 			border-radius: 0.25rem;
 		}
 
@@ -27,8 +33,8 @@ details {
 		}
 	}
 
-
 	&[open]::details-content {
-		padding-block-start: 2rem;
+		padding-block: 1rem;
+		padding-inline: 1rem;
 	}
 }
