@@ -3,7 +3,9 @@
 
 	--white: #fff4ea;
 	--black: #161214;
+
 	--red: light-dark(#df0000, #ff2e2e);
+	--lesser_red: light-dark(#b70000, #8b090a);
 }
 
 body {

@@ -1,6 +1,6 @@
 form {
 	display: none; /* Set to flex in JS */
-	gap: 1rem;
+	gap: 0.5rem;
 	flex-wrap: wrap;
 	margin-block-start: 5rem;
 	margin-block-end: 1rem;
@@ -11,6 +11,7 @@ label {
 	height: fit-content;
 }
 
+/* Clean this up once Safari gets it's act together */
 .custom-select {
 	position: relative;
 	height: fit-content;
@@ -18,7 +19,8 @@ label {
 	padding-inline: 0.75rem;
 	padding-block: 0.5rem;
 	border-radius: 0.25rem;
-	background: light-dark(#c2c9dd, #3f2b35);
+	background: var(--lesser_red);
+	color: light-dark(var(--white), currentColor);
 	flex-grow: 1;
 
 	fieldset {
@@ -28,13 +30,17 @@ label {
 		inset-inline-start: 0;
 		padding: 0.25rem;
 		padding-block-start: 0.5rem;
+		margin-block-start: 0.3rem;
 		inline-size: 100%;
 		min-inline-size: fit-content;
 		max-block-size: 20rem;
 		overflow: scroll;
 		border-radius: 0.25rem;
-		background: light-dark(#c2c9dd, #3f2b35);
+		border-start-end-radius: 0;
+		border-start-start-radius: 0;
+		background: var(--lesser_red);
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		font-size: small;
 		z-index: 10;
 	}
 
@@ -45,7 +51,7 @@ label {
 		border-radius: 0.25rem;
 
 		&:not(:has(input[type="date"])):is(:hover, :focus-visible) {
-			backdrop-filter: invert(25%);
+			background: oklch(from var(--lesser_red) calc(l - 0.2) c h);
 		}
 	}
 }
@@ -56,16 +62,22 @@ input[type="date"] {
 	padding-inline: 0.25rem;
 	padding-block: 0.5rem;
 	border-radius: 0.25rem;
-	backdrop-filter: invert(25%);
+	background: light-dark(var(--white), var(--black));
 	border: transparent;
 }
 
 input[type="reset"] {
-	background: light-dark(#c2c9dd, #3f2b35);
+	color: light-dark(var(--white), currentColor);
+	background: var(--lesser_red);
 	border: transparent;
 	padding-inline: 0.75rem;
 	padding-block: 0.5rem;
 	border-radius: 0.25rem;
+
+	&:hover,
+	&:focus-visible {
+		background: oklch(from var(--lesser_red) calc(l - 0.1) c h);
+	}
 }
 
 main {
