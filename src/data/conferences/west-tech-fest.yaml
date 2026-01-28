@@ -1,0 +1,16 @@
+title: West Tech Fest
+website: westtechfest.com.au
+socials:
+  youtube: westtechfest
+  linkedin: west-tech-fest
+tags:
+  - general
+events:
+  2026:
+    dates:
+      start: 2026-12-07
+      end: 2026-12-11
+    format: in-person
+    location:
+      country: AU
+      city: Perth
