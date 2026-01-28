@@ -1,0 +1,17 @@
+title: Open Hardware Summit
+website: oshwa.org
+socials:
+  bluesky: oshwassociation.bsky.social
+  fediverse: mastodon.social/@oshwassociation
+  linkedin: open-source-hardware-association
+tags:
+  - open-source
+events:
+  2026:
+    dates:
+      start: 2026-05-23
+      end: 2026-05-24
+    format: in-person
+    location:
+      country: DE
+      city: Berlin
