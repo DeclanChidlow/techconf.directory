@@ -12,6 +12,6 @@
 </div>
 <br/>
 
-This site is built with Web Origami. You can run it locally by downloading the dependencies from npm (`npm install`) and then starting a local development server with `npm run dev`.
+This site is built with [Web Origami](https://weborigami.org). You can run it locally by downloading the dependencies from npm (`npm install`) and then starting a local development server with `npm run dev`.
 
-Conference data is stored in `src/data/conferences/`. Speaker data is stored in `src/data/speakers/`.
+All data is stored as YAML files within `data/`. Submissions of new data are welcome. Please [open an issue with one of the defined templates](https://github.com/DeclanChidlow/techconf.directory/issues/new/choose).

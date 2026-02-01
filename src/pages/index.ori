@@ -16,15 +16,14 @@
 		<ul>
 		  ${ Tree.map(Tree.take(Tree.shuffle(Tree.filter(conferences, (conference) => Tree.size(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now())) > 0 )), 5 ), (conference, filename) => `
 			  <li>
-				<h3><a href="/conferences/${ filename.replace(/\.yaml$/, "") }">
+				<h3><a href="/conferences/${ Origami.basename(filename) }">
 					${ conference.title }
 				</a></h3>
 
 				<ul>
 					${ Tree.map(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now()), (event) => `
 						<li>
-							<p>${ functions/pretty-date.js(event.dates.start) }
-							${ event.dates.end ? `to ${ functions/pretty-date.js(event.dates.end) }` : '' }${ event.location ? ` in ${ event.location.city }, ${ new Intl.DisplayNames(["en"], { type: "region" }) .of(event.location.country) }` : '' }</p>
+							<p>${ functions/pretty-date.js(event.dates.start) }, ${ event.dates.end ? `to ${ functions/pretty-date.js(event.dates.end) },` : '' } ${ event.location ? ` in ${ event.location.city }, ${ new Intl.DisplayNames(["en"], { type: "region" }) .of(event.location.country) }` : '' }${ { virtual: ", on the web", hybrid: ", and on the web" }[event.format] || "" }</p>
 						</li>
 					`)}
 				</ul>

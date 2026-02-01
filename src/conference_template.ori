@@ -53,6 +53,7 @@
 						<h3>${year}:</h3>
 						<p>${ functions/pretty-date.js(event.dates.start) } ${ event.dates.end ? `to ${ functions/pretty-date.js(event.dates.end) }` : '' }</p>
 						${ event.location ? `<p>${event.location.city}, ${ new Intl.DisplayNames(["en"], { type: "region" }).of(event.location.country) }</p>` : '' }
+						${ { virtual: "Virtual", hybrid: "Hybrid", in-person: "In Person" }[event.format] || "" }
 						${ event.cfp_open ? `<p class="cfp-open">Call for papers open!</p>` : "" }
 					</li>
 				`)}
