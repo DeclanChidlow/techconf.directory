@@ -7,3 +7,6 @@ preview_urls = false
 directory = "./build/"
 not_found_handling = "404-page"
 html_handling = "drop-trailing-slash"
+
+[triggers]
+crons = ["0 0 * * *"]
