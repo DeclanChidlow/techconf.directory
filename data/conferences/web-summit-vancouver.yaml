@@ -1,0 +1,13 @@
+title: Web Summit Vancouver
+website: vancouver.websummit.com
+tags:
+  - general
+events:
+  2026:
+    dates:
+      start: 2026-05-11
+      end: 2026-05-14
+    format: in-person
+    location:
+      country: CA
+      city: Vancouver

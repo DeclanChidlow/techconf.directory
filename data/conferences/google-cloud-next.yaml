@@ -1,0 +1,15 @@
+title: Google Cloud Next
+website: www.googlecloudevents.com/next-vegas
+tags:
+  - data
+  - cloud
+  - devops
+events:
+  2026:
+    dates:
+      start: 2026-04-22
+      end: 2026-04-24
+    format: hybrid
+    location:
+      country: US
+      city: Las Vegas

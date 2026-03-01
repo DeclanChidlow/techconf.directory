@@ -1,0 +1,13 @@
+title: Black Hat USA
+website: blackhat.com
+tags:
+  - cybersecurity
+events:
+  2026:
+    dates:
+      start: 2026-08-01
+      end: 2026-08-06
+    format: in-person
+    location:
+      country: US
+      city: Las Vegas

@@ -1,0 +1,13 @@
+title: Black Hat Asia
+website: blackhat.com
+tags:
+  - cybersecurity
+events:
+  2026:
+    dates:
+      start: 2026-04-21
+      end: 2026-04-24
+    format: in-person
+    location:
+      country: SG
+      city: Marina Bay

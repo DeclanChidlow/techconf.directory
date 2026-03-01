@@ -1,0 +1,13 @@
+title: Black Hat Europe
+website: blackhat.com
+tags:
+  - cybersecurity
+events:
+  2026:
+    dates:
+      start: 2026-12-07
+      end: 2026-12-10
+    format: in-person
+    location:
+      country: UK
+      city: London
