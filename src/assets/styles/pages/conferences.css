@@ -50,13 +50,14 @@ label {
 		padding-inline: 0.5rem;
 		border-radius: 0.25rem;
 
-		&:not(:has(input[type="date"])):is(:hover, :focus-visible) {
+		&:not(:has(input[type="date"], select)):is(:hover, :focus-visible) {
 			background: oklch(from var(--lesser_red) calc(l - 0.2) c h);
 		}
 	}
 }
 
-input[type="date"] {
+input[type="date"],
+select {
 	width: 100%;
 	background: none;
 	padding-inline: 0.25rem;

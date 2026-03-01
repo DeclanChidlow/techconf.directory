@@ -2,7 +2,7 @@
 	"name": "techconf-directory",
 	"type": "module",
 	"dependencies": {
-		"@weborigami/origami": "^0.6.7"
+		"@weborigami/origami": "^0.6.11"
 	},
 	"scripts": {
 		"dev": "ori serve watch src, =debug src/site.ori",

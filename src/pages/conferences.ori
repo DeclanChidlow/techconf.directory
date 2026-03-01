@@ -33,6 +33,23 @@
 			</fieldset>
 		</details>
 
+		<details class="custom-select" name="filter">
+			<summary>Sort</summary>
+			<fieldset>
+				<label>Sort By: 
+					<select id="sort-by" name="sort-by">
+						<option value="date">Date</option>
+						<option value="alphabetical">Alphabetical</option>
+					</select>
+				</label>
+				<label>Order: 
+					<select id="sort-order" name="sort-order">
+						<option value="asc">Ascending</option>
+						<option value="desc">Descending</option>
+					</select>
+				</label>
+			</fieldset>
+		</details>
 		
 		<input type="reset" value="Clear">
 	</form>

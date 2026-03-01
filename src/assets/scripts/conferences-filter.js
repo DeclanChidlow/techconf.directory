@@ -108,16 +108,18 @@ document.addEventListener("DOMContentLoaded", () => {
 			end: document.getElementById("date-end").value,
 		};
 
+		const sortBy = document.getElementById("sort-by")?.value || "date";
+		const sortOrder = document.getElementById("sort-order")?.value || "asc";
+
 		dom.list.innerHTML = "";
+		let filteredResults = [];
 
 		conferencesData.forEach((conf) => {
 			if (filters.tags.length > 0 && !filters.tags.some((t) => (conf.tags || []).includes(t))) return;
 
 			const validEvents = Object.values(conf.upcoming_events || {}).filter((event) => {
 				if (filters.countries.length > 0 && !filters.countries.includes(event.location?.country)) return false;
-
 				if (filters.formats.length > 0 && !filters.formats.includes(event.format?.toLowerCase())) return false;
-
 				if (filters.start && (event.dates?.end || "") < filters.start) return false;
 				if (filters.end && (event.dates?.start || "") > filters.end) return false;
 
@@ -125,22 +127,42 @@ document.addEventListener("DOMContentLoaded", () => {
 			});
 
 			if (validEvents.length > 0) {
-				const li = document.createElement("li");
-				const eventsHtml = validEvents
-					.map(
-						(evt) => `
-						<li>
-							${formatDate(evt.dates.start)} ${evt.dates.end ? ` to ${formatDate(evt.dates.end)}` : ""}
-							<p>${evt.location ? `${evt.location.city}, ${getCountryName(evt.location.country)}` : "Virtual"}</p>
-							${evt.cfp_open ? '<p class="cfp-open">Call for papers open!</p>' : ""}
-						</li>
-						`,
-					)
-					.join("");
-
-				li.innerHTML = `<h2><a href="/conferences/${conf.id}">${conf.title}</a></h2><ul>${eventsHtml}</ul>`;
-				dom.list.appendChild(li);
+				filteredResults.push({ conf, validEvents });
 			}
+		});
+
+		filteredResults.sort((a, b) => {
+			let valA, valB;
+
+			if (sortBy === "alphabetical") {
+				valA = a.conf.title.toLowerCase();
+				valB = b.conf.title.toLowerCase();
+			} else {
+				valA = a.validEvents.reduce((min, e) => (e.dates.start < min ? e.dates.start : min), a.validEvents[0].dates.start);
+				valB = b.validEvents.reduce((min, e) => (e.dates.start < min ? e.dates.start : min), b.validEvents[0].dates.start);
+			}
+
+			if (valA < valB) return sortOrder === "asc" ? -1 : 1;
+			if (valA > valB) return sortOrder === "asc" ? 1 : -1;
+			return 0;
+		});
+
+		filteredResults.forEach(({ conf, validEvents }) => {
+			const li = document.createElement("li");
+			const eventsHtml = validEvents
+				.map(
+					(evt) => `
+					<li>
+						${formatDate(evt.dates.start)} ${evt.dates.end ? ` to ${formatDate(evt.dates.end)}` : ""}
+						<p>${evt.location ? `${evt.location.city}, ${getCountryName(evt.location.country)}` : "Virtual"}</p>
+						${evt.cfp_open ? '<p class="cfp-open">Call for papers open!</p>' : ""}
+					</li>
+					`,
+				)
+				.join("");
+
+			li.innerHTML = `<h2><a href="/conferences/${conf.id}">${conf.title}</a></h2><ul>${eventsHtml}</ul>`;
+			dom.list.appendChild(li);
 		});
 	}
 
