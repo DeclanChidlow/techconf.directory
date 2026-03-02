@@ -17,33 +17,49 @@
 			${ conference.socials?.linkedin ? `<a href="https://www.linkedin.com/company/${ conference.socials.linkedin }/">${ linkedin_icon }</a>` : '' }
 		</div>
 
-		${ conference.events[Tree.keys(conference.events).sort().pop()].location?.country === "US" ? `
+		${ (advisories => advisories[conference.events[Tree.keys(conference.events).sort().pop()].location?.country] ? `
 			<div class="travel-advisory">
 				<h2>Travel Advisory</h2>
-				<p>Attendees should be aware that travel to and within the United States of America presents heightened risks. Recent immigration enforcement actions have included aggressive use of force and expanded detention. Transgender and gender-diverse travellers, in particular, may face increased scrutiny, misgendering, or denial of entry based on documentation or appearance. More broadly, the United States is experiencing political instability and the rapid expansion of authoritarian policies, sometimes implemented with little advance notice. Travellers are advised to review current conditions carefully, carry complete documentation, and assess personal risk before making travel plans. Consult your country's travel advisory for more information.</p>
+				<p>Prospective attendees should be aware that ${ advisories[conference.events[Tree.keys(conference.events).sort().pop()].location?.country] }</p>
+				<p>Consult your country's travel advisory for more information.</p>
 			</div>
-		` : '' }
-
-		${ conference.events[Tree.keys(conference.events).sort().pop()].location?.country === "BF" ? `
-			<div class="travel-advisory">
-				<h2>Travel Advisory</h2>
-				<p>Attendees should be aware that there is an ongoing and high threat of terrorism, violent crime, and kidnapping throughout Burkina Faso. Travellers are advised to review current conditions carefully and assess personal risk before making travel plans. Consult your country's travel advisory for more information.</p>
-			</div>
-		` : '' }
-
-		${ conference.events[Tree.keys(conference.events).sort().pop()].location?.country === "UG" ? `
-			<div class="travel-advisory">
-				<h2>Travel Advisory</h2>
-				<p>Attendees should be aware that there is a risk of civil unrest, and a significant threat of terrorism and violent crime in Uganda. Travel surrounding the border with South Sudan should be avoided entirely and further caution should be taken surrounding the border with the Democratic Republic of the Congo. Travellers are advised to review current conditions carefully and assess personal risk before making travel plans. Consult your country's travel advisory for more information.</p>
-			</div>
-		` : '' }
-
-		${ conference.events[Tree.keys(conference.events).sort().pop()].location?.country === "NE" ? `
-			<div class="travel-advisory">
-				<h2>Travel Advisory</h2>
-				<p>Attendees should be aware that there is an ongoing and high threat of terrorism, civil, unrest, violent crime, and kidnapping throughout Nigeria. Travel to and through several areas of the country should be avoided entirely. Travellers are advised to review current conditions carefully and assess personal risk before making travel plans. Consult your country's travel advisory for more information.</p>
-			</div>
-		` : '' }
+		` : '')({
+			// Should be included: https://www.humandignitytrust.org/lgbt-the-law/map-of-criminalisation/
+			US: "travel to and within the United States of America presents heightened risks. Recent immigration enforcement actions have included aggressive use of force and expanded detention. Transgender and gender-diverse travellers, in particular, may face increased scrutiny, misgendering, or denial of entry based on documentation or appearance. More broadly, the United States is experiencing political instability and the rapid expansion of authoritarian policies, sometimes implemented with little advance notice. Travellers are advised to review current conditions carefully, carry complete documentation, and assess personal risk before making travel plans.",
+			BF: "there is an ongoing and high threat of terrorism, violent crime, and kidnapping throughout Burkina Faso. Travellers are advised to review current conditions carefully and assess personal risk before making travel plans.",
+			UG: "there is a risk of civil unrest, and a significant threat of terrorism and violent crime in Uganda. Travel surrounding the border with South Sudan should be avoided entirely and further caution should be taken surrounding the border with the Democratic Republic of the Congo. Travellers are advised to review current conditions carefully and assess personal risk before making travel plans.",
+			NG: "there is an ongoing and high threat of terrorism, civil, unrest, violent crime, and kidnapping throughout Nigeria. Travel to and through several areas of the country should be avoided entirely. Travellers are advised to review current conditions carefully and assess personal risk before making travel plans.",
+			IR: "Iran is currently in an extremely volatile state and should be not be travelled to.",
+			IQ: "Iraq is currently in an extremely volatile state and should be not be travelled to.",
+			IL: "Israel is currently in an extremely volatile state and should be not be travelled to.",
+			AE: "the United Arab Emirates is currently in an extremely volatile state and should be not be travelled to.",
+			QA: "Qatar is currently in an extremely volatile state and should be not be travelled to.",
+			QA: "Palestine is currently in an extremely volatile state and should be not be travelled to.",
+			LB: "Lebanon is currently in an extremely volatile state and should be not be travelled to.",
+			YE: "Yemen is currently in an extremely volatile state and should be not be travelled to.",
+			SY: "Syria is currently in an extremely volatile state and should be not be travelled to.",
+			BH: "Bahrain is currently in an extremely volatile state and should be not be travelled to.",
+			KW: "Kuwait is currently in an extremely volatile state and should be not be travelled to.",
+			RU: "there is a high threat of terrorism and that Russia is actively attempting to unjustly invade Ukraine. It should be not be travelled to.",
+			BY: "there is high-risk of arbitrary enforcement of laws by Belarusian authorities. Russia's ongoing invasion of Ukraine also presents a volatile security environment, especially along the neighbouring borders. It should be not be travelled to.",
+			ID: "sex outside of marriage is criminalised in Indonesia. As same-sex marriage is not recognised, this effectively provides a legal pathway to prosecute same-sex couples.",
+			GH: "queer relationships and identities are illegal and may lead to violence, threats, extortion, and arbitrary arrest.",
+			GH: "queer relationships and identities are illegal and may lead to violence, threats, extortion, and arbitrary arrest.",
+			KP: "travelling into North Korea comes with an extremely high risk of arbitrary detention. It should be not be travelled to.",
+			LY: "Libya has a high threat of terrorism and kidnapping, and that the security situation is dangerous. It should be not be travelled to.",
+			SO: "Somalia has an extremely high risk of violent crime, armed conflict, terrorism, and kidnapping. It should be not be travelled to.",
+			SS: "South Sudan is in an extremely volatile state. Sudden deterioration of the security situation may occur. It should be not be travelled to.",
+			SD: "Sudan is in an extremely volatile state and there is high-risk of kidnapping, armed conflict, civil unrest, and terrorism. It should be not be travelled to.",
+			CF: "the Central African Republic has a high threat of terrorism, kidnapping, and violent crime. It should be not be travelled to.",
+			CD: "the Democratic Republic of the Congo has a high threat of kidnapping, conflict, violent protests, terrorism. Cholera and mpox outbreaks are ongoing. It should be not be travelled to.",
+			VE: "Venezuela is currently in an extremely volatile state and should be not be travelled to.",
+			TD: "Chad has a high threat of terrorism and kidnapping, and that the security situation is dangerous. It should be not be travelled to.",
+			HT: "there is ongoing risk of violent crime including murder, robbery, sexual assault, and car-jacking in Haiti. It should be not be travelled to.",
+			UA: "Ukraine is currently in a volatile state due to Russia's unjust ongoing invasion and should be not be travelled to.",
+			MM: "there is high likelihood of violence, including explosions, anytime and anywhere. You may be detained and required to force in the armed forces if authorities deem you a citizen. Myanmar should be not be travelled to.",
+			AF: "Afghanistan should not be travelled to. Kidnapping, arbitrary detainment, and terrorist attacks are likely. Conflict can escalate suddenly and borders may be closed without warning.",
+			ML: "there is significant risk of terrorism and kidnapping in Mali. It should not be travelled to.",
+		}) }
 
 		${ Tree.size(Tree.filter(conference.events, (event) => Date.parse(event.dates.start) >= Date.now())) > 0 ? `
 			<h2>Upcoming Events</h2>
