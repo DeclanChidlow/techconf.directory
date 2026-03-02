@@ -31,6 +31,10 @@ h3 {
 	font-size: 1.3rem;
 }
 
+a {
+	color: var(--red);
+}
+
 hr {
 	margin-block: 1rem;
 }

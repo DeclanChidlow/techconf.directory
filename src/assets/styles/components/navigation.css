@@ -31,7 +31,9 @@
 }
 
 footer {
+	font-size: 0.9rem;
 	text-align: center;
+	margin-block-start: 3rem;
 
 	nav ul {
 		display: flex;
@@ -49,5 +51,12 @@ footer {
 
 	a {
 		color: inherit;
+	}
+
+	&::before {
+		content: "🙦 ━━ ✥ ━━ 🙤"/"";
+		position: relative;
+		inset-block-start: -2rem;
+		font-size: 1.2rem;
 	}
 }
