@@ -35,8 +35,47 @@ document.addEventListener("DOMContentLoaded", () => {
 		.then((json) => {
 			conferencesData = json.data;
 			populateCheckboxes(conferencesData);
+			applyUrlParams();
 			renderConferences();
 		});
+
+	function applyUrlParams() {
+		const params = new URLSearchParams(window.location.search);
+
+		["countries", "tags", "format"].forEach((name) => {
+			(params.get(name) || "")
+				.split(",")
+				.filter(Boolean)
+				.forEach((val) => {
+					const cb = dom.form.querySelector(`input[name="${name}"][value="${val}"]`);
+					if (cb) cb.checked = true;
+				});
+		});
+
+		["date-start", "date-end", "sort-by", "sort-order"].forEach((id) => {
+			const paramVal = params.get(id.replace("date-", ""));
+			const input = document.getElementById(id);
+			if (paramVal && input) input.value = paramVal;
+		});
+	}
+
+	function updateUrlParams(filters, sortBy, sortOrder) {
+		const params = new URLSearchParams();
+
+		if (filters.countries.length) params.set("countries", filters.countries.join(","));
+		if (filters.tags.length) params.set("tags", filters.tags.join(","));
+		if (filters.formats.length) params.set("format", filters.formats.join(","));
+		if (filters.start) params.set("start", filters.start);
+		if (filters.end) params.set("end", filters.end);
+
+		if (sortBy && sortBy !== "date") params.set("sort-by", sortBy);
+		if (sortOrder && sortOrder !== "asc") params.set("sort-order", sortOrder);
+
+		const qs = params.toString();
+		const newUrl = window.location.pathname + (qs ? `?${qs}` : "");
+
+		window.history.replaceState(null, "", newUrl);
+	}
 
 	function populateCheckboxes(data) {
 		const countryCounts = {};
@@ -104,12 +143,14 @@ document.addEventListener("DOMContentLoaded", () => {
 			countries: getFilterValues("countries"),
 			tags: getFilterValues("tags"),
 			formats: getFilterValues("format"),
-			start: document.getElementById("date-start").value,
-			end: document.getElementById("date-end").value,
+			start: document.getElementById("date-start")?.value || "",
+			end: document.getElementById("date-end")?.value || "",
 		};
 
 		const sortBy = document.getElementById("sort-by")?.value || "date";
 		const sortOrder = document.getElementById("sort-order")?.value || "asc";
+
+		updateUrlParams(filters, sortBy, sortOrder);
 
 		dom.list.innerHTML = "";
 		let filteredResults = [];
