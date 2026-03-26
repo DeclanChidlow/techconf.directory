@@ -1,0 +1,13 @@
+title: GDC Festival of Gaming
+website: gdconf.com
+tags:
+  - game development
+events:
+  2026:
+    dates:
+      start: 2026-03-09
+      end: 2026-03-13
+    format: in-person
+    location:
+      country: US
+      city: San Francisco
