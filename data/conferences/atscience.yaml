@@ -1,0 +1,13 @@
+title: ATScience
+website: atproto.science/events/
+tags:
+  - at protocol
+events:
+  2026:
+    dates:
+      start: 2026-03-27
+    format: hybrid
+    atmo-rsvp: did:plc:nncebyouba4ex3775syiyvjy/e/3mfscvdtbb2ql
+    location:
+      country: CA
+      city: Vancouver

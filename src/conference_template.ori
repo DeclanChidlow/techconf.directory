@@ -67,9 +67,9 @@
 					<li>
 						<h3>${year}:</h3>
 						<p>${ functions/pretty-date.js(event.dates.start) } ${ event.dates.end ? `to ${ functions/pretty-date.js(event.dates.end) }` : '' }</p>
-						${ event.location ? `<p>${event.location.city}, ${ new Intl.DisplayNames(["en"], { type: "region" }).of(event.location.country) }</p>` : '' }
-						${ { virtual: "Virtual", hybrid: "Hybrid", in-person: "In Person" }[event.format] || "" }
+						<p> ${ event.location ? `${ event.location.city }, ${ new Intl.DisplayNames(["en"], { type: "region" }).of(event.location.country) } • ` : '' } ${ { virtual: "Virtual", hybrid: "Hybrid", in-person: "In Person" }[event.format] || "" }</p>
 						${ event.cfp_open ? `<p class="cfp-open">Call for papers open!</p>` : "" }
+						${ event.atmo-rsvp ? `<div class="atmo-rsvp"><a href="https://atmo.rsvp/p/${ event.atmo-rsvp }">Register interest on atmo.rsvp</a></div>` : "" }
 					</li>
 				`)}
 			</ul>
@@ -82,11 +82,14 @@
 					<li>
 						<h3>${year}:</h3>
 						<p>${ functions/pretty-date.js(event.dates.start) } ${ event.dates.end ? `to ${ functions/pretty-date.js(event.dates.end) }` : '' }</p>
-						${ event.location ? `<p>${event.location.city}, ${ new Intl.DisplayNames(["en"], { type: "region" }).of(event.location.country) }</p>` : '' }
+						<p> ${ event.location ? `${ event.location.city }, ${ new Intl.DisplayNames(["en"], { type: "region" }).of(event.location.country) } • ` : '' } ${ { virtual: "Virtual", hybrid: "Hybrid", in-person: "In Person" }[event.format] || "" }</p>
 					</li>
 				`)}
 			</ul>
 		` : '' }
 	</article>
+
+	<!-- Would be a good idea to make this only load on applicable pages. -->
+	<script src="/assets/scripts/atmo-rsvp-integration.js"></script>
 	`
 })

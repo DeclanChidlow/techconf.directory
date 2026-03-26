@@ -1,4 +1,4 @@
-title: ATmosphereConf 
+title: ATmosphereConf
 website: atmosphereconf.org
 tags:
   - back-end
@@ -8,7 +8,8 @@ events:
     dates:
       start: 2026-03-26
       end: 2026-03-29
-    format: in-person
+    format: hybrid
+    atmo-rsvp: did:plc:lehcqqkwzcwvjvw66uthu5oq/e/3lte3c7x43l2e
     location:
       country: CA
       city: Vancouver
