@@ -8,7 +8,7 @@
 	_body: `
 	<header>
 		<h1>${ title }</h1>
-		<p>Itching for someone with skill and flair to speak at your conference or event? These fine folks the best to ever do it.</p>
+		<p>Itching for someone with skill and flair to speak at your conference or event? Here are some fine folks you might consider. Remember to avoid homogeneity; the best events thrive on a wide range of backgrounds, identities, and unique perspectives.</p>
 	</header>
 
 	<ol>
