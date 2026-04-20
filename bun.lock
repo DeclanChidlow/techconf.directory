@@ -5,7 +5,7 @@
     "": {
       "name": "techconf-directory",
       "dependencies": {
-        "@weborigami/origami": "^0.6.11",
+        "@weborigami/origami": "^0.6.15",
       },
     },
   },
