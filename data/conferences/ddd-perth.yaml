@@ -7,6 +7,13 @@ socials:
 tags:
   - general
 events:
+  2026:
+    dates:
+      start: 2026-10-03
+    format: in-person
+    location:
+      country: AU
+      city: Perth
   2025:
     dates:
       start: 2025-09-20

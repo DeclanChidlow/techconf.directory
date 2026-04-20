@@ -1,0 +1,16 @@
+title: Developers Up North
+website: www.developersupnorth.co.uk
+socials:
+  linkedin: hull-frontend
+tags:
+  - front-end
+  - full-stack
+  - ai
+events:
+  2026:
+    dates:
+      start: 2026-06-18
+    format: in-person
+    location:
+      country: GB
+      city: Hull

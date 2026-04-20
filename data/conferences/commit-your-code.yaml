@@ -1,0 +1,17 @@
+title: The Commit Your Code Conference
+website: www.commityourcode.com
+tags:
+  - ai
+  - javascript
+  - startup
+  - java
+  - cloud
+events:
+  2026:
+    dates:
+      start: 2026-09-03
+      end: 2026-09-04
+    format: in-person
+    location:
+      country: US
+      city: Plano
