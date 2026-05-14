@@ -1,0 +1,18 @@
+title: Figma Config
+website: config.figma.com
+tags:
+  - front-end
+  - web development
+  - design
+  - ios
+  - android
+  - ux
+events:
+  2026:
+    dates:
+      start: 2026-06-23
+      end: 2026-06-25
+    format: in-person
+    location:
+      country: US
+      city: San Francisco

@@ -8,6 +8,13 @@ tags:
   - front-end
   - web development
 events:
+  2027:
+    dates:
+      start: 2027-03-06
+    format: hybrid
+    location:
+      country: GB
+      city: London
   2026:
     dates:
       start: 2026-02-28

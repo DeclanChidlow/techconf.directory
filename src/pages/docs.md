@@ -16,7 +16,7 @@ No authentication is necessary, but please be respectful and employ best practic
 
 Endpoint: `https://techconf.directory/api`
 
-All returned as `application/json`.
+All returned as `application/json` with open CORS headers: `access-control-allow-methods: GET, HEAD, OPTIONS`, `access-control-allow-origin: *`.
 
 OpenAPI specification coming soon.
 
