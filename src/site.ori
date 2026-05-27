@@ -4,7 +4,7 @@
 
 	index.html = pages/index.ori(conferences_data.ori, speakers_data.ori)
 
-	...Tree.mapExtension(pages, ".md→.html", {
+	...Tree.mapExtension(pages, ".ori.md→.html", {
 		value: (path) => main_template.ori(Origami.mdHtml(path))
 	})
 

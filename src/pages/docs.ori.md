@@ -28,7 +28,7 @@ OpenAPI specification coming soon.
 **techconf.directory**
 string
 
-Version of the API (eg, '1.0.0').
+Version of the API (eg, '${ api/index.ori/techconf.directory }').
 
 ---
 
@@ -254,7 +254,7 @@ URL of the speaker’s personal or professional website (eg, '[https://vale.rock
 **socials.bluesky**
 string
 
-Bluesky handle of the speaker (eg, '@vale.rocks').
+Bluesky did of the speaker (eg, 'did:plc:7qg6mz2xtzozxkgbcvf4pdnu').
 
 ---
 
