@@ -88,13 +88,13 @@
 
     "@img/sharp-win32-x64": ["@img/sharp-win32-x64@0.34.5", "", { "os": "win32", "cpu": "x64" }, "sha512-+29YMsqY2/9eFEiW93eqWnuLcWcufowXewwSNIT6UwZdUUCrM3oFjMWH/Z6/TMmb4hlFenmfAVbpWeup2jryCw=="],
 
-    "@weborigami/async-tree": ["@weborigami/async-tree@0.6.15", "", {}, "sha512-tghCZfyNeEWUrNPmpeXm+4/ejoFgp7E+7xKwi8ZDWmsbvwLVc75l9H2xd17eLmJbw9H4hHIa/fmV9oDsRJO5eg=="],
+    "@weborigami/async-tree": ["@weborigami/async-tree@0.6.17", "", {}, "sha512-+ozQYwKgBZ9pYwL5nsZKII7w0wr64qMnRrx1ogs412bvRi0pyh/EisdwnWZYV2jZqJ8viZ3LAGTf+7q2sWYFTg=="],
 
     "@weborigami/json-feed-to-rss": ["@weborigami/json-feed-to-rss@1.0.1", "", {}, "sha512-HiPhIoelHH9pSrKnhvAwwUEbdiP11Ppg5TDU3VcfaADekObyEmCXYO7mu/zXNWD18oKc5zmGNGW7rUwb88C5sg=="],
 
-    "@weborigami/language": ["@weborigami/language@0.6.15", "", { "dependencies": { "@weborigami/async-tree": "0.6.15", "exif-parser": "0.1.12", "watcher": "2.3.1", "yaml": "2.8.2" } }, "sha512-fNNQYS5O6gSNP7EehJQk8k8O01CUMFCx0M6MBCvkdbwVUhHP+ic3hxNDYgkswJ/ogtr33KrYzwB9h12Pt+JJ0Q=="],
+    "@weborigami/language": ["@weborigami/language@0.6.17", "", { "dependencies": { "@weborigami/async-tree": "0.6.17", "exif-parser": "0.1.12", "watcher": "2.3.1", "yaml": "2.8.2" } }, "sha512-Y06zLpHi8VjCkOUora3FQQubFlew8ihDtgJIGpaLW5xel2QOT9MuHQ96vM37bHgQpJXv8G681GFuj4hNKJxo5w=="],
 
-    "@weborigami/origami": ["@weborigami/origami@0.6.15", "", { "dependencies": { "@hpcc-js/wasm-graphviz": "^1.21.0", "@weborigami/async-tree": "0.6.15", "@weborigami/json-feed-to-rss": "1.0.1", "@weborigami/language": "0.6.15", "css-tree": "3.1.0", "highlight.js": "11.11.1", "jsdom": "28.1.0", "marked": "17.0.3", "marked-gfm-heading-id": "4.1.3", "marked-highlight": "2.2.3", "marked-smartypants": "1.1.11", "sharp": "0.34.5", "yaml": "2.8.2" }, "bin": { "ori": "src/cli/cli.js" } }, "sha512-6ZvnGs6WoZmjiMg/BC/jS7I/A7dLannlfrkZyZk+kQ3in+75GMfXbCujRJU1HDmau/vF5emPrA7sylFa1IvICw=="],
+    "@weborigami/origami": ["@weborigami/origami@0.6.17", "", { "dependencies": { "@hpcc-js/wasm-graphviz": "^1.21.0", "@weborigami/async-tree": "0.6.17", "@weborigami/json-feed-to-rss": "1.0.1", "@weborigami/language": "0.6.17", "css-tree": "3.1.0", "highlight.js": "11.11.1", "jsdom": "28.1.0", "marked": "17.0.3", "marked-gfm-heading-id": "4.1.3", "marked-highlight": "2.2.3", "marked-smartypants": "1.1.11", "sharp": "0.34.5", "whatwg-mimetype": "5.0.0", "yaml": "2.8.2" }, "bin": { "ori": "src/cli/cli.js" } }, "sha512-bfnHTaDuuIVYmH8QBxD+KQ3ET/hsm4MJPWoou/NErId6FSoagmIeMuSCqdWAqhpbY2F5qPzCKEWSPjcOwy86sQ=="],
 
     "agent-base": ["agent-base@7.1.4", "", {}, "sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ=="],
 

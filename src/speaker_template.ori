@@ -11,7 +11,7 @@
 
 		<div class="socials">
 			${ speaker.website ? `<a href="https://${ speaker.website }" class="website"><img src="https://icons.duckduckgo.com/ip3/${ speaker.website }.ico" width="24" alt="">${ speaker.website }</a>` : '' }
-			${ speaker.socials?.bluesky ? `<a href="https://bsky.app/profile/${ speaker.socials.bluesky }">${ bluesky_icon }</a>` : '' }
+			${ speaker.socials?.bluesky ? `<a href="https://bsky.app/profile/${ speaker.socials.bluesky }" class="bluesky">${ bluesky_icon }</a>` : '' }
 			${ speaker.socials?.fediverse ? `<a href="https://${ speaker.socials.fediverse }">${ fediverse_icon }</a>` : '' }
 			${ speaker.socials?.youtube ? `<a href="https://www.youtube.com/@${ speaker.socials.youtube }">${ youtube_icon }</a>` : '' }
 			${ speaker.socials?.linkedin ? `<a href="https://www.linkedin.com/in/${ speaker.socials.linkedin }/">${ linkedin_icon }</a>` : '' }
@@ -19,5 +19,7 @@
 
 		<p class="location">${ speaker.location.city }, ${ new Intl.DisplayNames(["en"], { type: "region" }).of(speaker.location.country) }</p>
 	</article>
+
+	<script src="/assets/scripts/speaker-picture.js"></script>
 	`
 })
