@@ -20,6 +20,6 @@ TechConf.Directory will always remain free and independent. Unlike some other di
 For some further details about the project, you can refer to my [portfolio write-up](https://vale.rocks/portfolio/techconf-directory).
 
 <hr>
-<small>Current commit: <code>${ Origami.shell('git rev-parse --short HEAD') }</code>. Last built: <code>${ new Date().toLocaleString('en-AU', { timeZone: 'UTC', hour12: false }) } UTC</code>.</small>
+<small>Current commit: <code>${ Origami.shell('git rev-parse --short HEAD') }</code>. Last build: <code>${ new Date().toLocaleString('en-AU', { timeZone: 'UTC', hour12: false }) } UTC</code>.</small>
 
 </div>

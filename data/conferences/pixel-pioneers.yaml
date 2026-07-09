@@ -4,6 +4,13 @@ tags:
   - front-end
   - web development
 events:
+  2027:
+    dates:
+      start: 2026-06
+    format: in-person
+    location:
+      country: GB
+      city: Bristol
   2026:
     dates:
       start: 2026-06-19
